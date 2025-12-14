@@ -9,7 +9,7 @@ import { IoMenuOutline } from "react-icons/io5";
 const Navbar = () => {
   return (
     <Container>
-      <div className="flex items-center justify-between py-[30px] font-Figtree">
+      <div className="flex items-center justify-between py-[30px] font-Figtree z-10 relative">
         <Link
           href={"/"}
           className="text-2xl text-white uppercase font-bold flex flex-col"
