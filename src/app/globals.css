@@ -1,26 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap');
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  /* Fonts */
+  --font-Inter: Inter, sans-serif;
+  --font-Figtree: "Figtree", sans-serif;
+  --font-Instrument-Serif: "Instrument Serif", serif;
+
+  /* Colors */
+
+  /* Primary */
+  --color-primary-10: #284DF6;
+  --color-primary-15: #6D86F9;
+
+  /* neutral */
+
+  --color-neutral-10: #01142F;
+
+
+  /* Shadows */
+  --shadow-button: 0 0.482px 1.253px -1.167px rgba(0, 0, 0, 0.10), 0 1.831px 4.76px -2.333px rgba(0, 0, 0, 0.09), 0 8px 20.8px -3.5px rgba(0, 0, 0, 0.04), 0 -2px 9px 0 rgba(255, 255, 255, 0.49) inset, 0 0 0 2px rgba(0, 0, 0, 0.20);
+
+  /* Gradients */
+  --bg-gradient-primary: radial-gradient(52.19% 100% at 50% 0%, #000 0%, rgba(0, 0, 0, 0.00) 95.31%);
+
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.bg-gradient-primary {
+  background: var(--bg-gradient-primary);
 }
