@@ -11,7 +11,7 @@ const AboutMe = () => {
   ];
   return (
     <Container>
-      <div className="py-[120px] flex gap-9">
+      <div className="py-[100px] flex gap-9">
         <div className="w-[30%]">
           <div className="flex items-center gap-2.5">
             <Image
