@@ -8,7 +8,7 @@ import { LuLaptopMinimalCheck } from "react-icons/lu";
 
 const Hero = () => {
   return (
-    <div className="absolute top-0 w-full font-Figtree">
+    <div className="w-full font-Figtree">
       <Container>
         <div className="relative z-10 flex items-center justify-between mt-64">
           {/* Left side contents */}

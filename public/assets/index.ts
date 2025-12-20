@@ -4,10 +4,12 @@ import rahulSutradhar from "./images/rahul_sutradhar.webp";
 
 import code from "./icons/code.svg";
 import available from "./icons/available.svg";
+import blueStar from "./icons/blue-star.svg";
 
 export const ICONS = {
     code,
-    available
+    available,
+    blueStar,
 }
 
 export const IMAGES = {
