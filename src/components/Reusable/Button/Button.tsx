@@ -25,7 +25,7 @@ const Button: React.FC<ButtonProps> = ({
   className,
 }) => {
   const baseClasses =
-    "rounded-lg shadow-button px-7 py-[13px] font-semibold font-Inter flex items-center gap-2 w-fit transition-all duration-200 cursor-pointer disabled:cursor-not-allowed disabled:opacity-50 hover:scale-105";
+    "rounded-lg shadow-button px-7 py-2.5 font-semibold font-Inter flex items-center gap-2 w-fit transition-all duration-200 cursor-pointer disabled:cursor-not-allowed disabled:opacity-50 hover:scale-105";
 
   const variantClasses =
     variant === "primary"
