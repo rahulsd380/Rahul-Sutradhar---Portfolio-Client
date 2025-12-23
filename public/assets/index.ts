@@ -11,16 +11,23 @@ import aiIntegrationService from "./images/ai-integration-service.webp";
 // Gradients
 import featuredProjectGradient from "./images/gradients/featured-project-gradient.png";
 import serviceCardGradient from "./images/gradients/service-card-gradient.png";
+import footerGradient from "./images/gradients/footer-gradient.png";
 
 // Icons
 import code from "./icons/code.svg";
 import available from "./icons/available.svg";
 import blueStar from "./icons/blue-star.svg";
+import call from "./icons/call.svg";
+import email from "./icons/email.svg";
+import location from "./icons/location.svg";
 
 export const ICONS = {
   code,
   available,
   blueStar,
+  call,
+  email,
+  location,
 };
 
 export const IMAGES = {
@@ -37,4 +44,5 @@ export const IMAGES = {
 export const GRADIENTS = {
   featuredProjectGradient,
   serviceCardGradient,
+  footerGradient,
 };
