@@ -2,6 +2,8 @@ import Container from "@/components/Reusable/Container/Container";
 import Heading from "@/components/Reusable/Heading/Heading";
 import ServiceCard from "./ServiceCard";
 import { IMAGES } from "../../../../public/assets";
+import Link from "next/link";
+import Button from "@/components/Reusable/Button/Button";
 
 const Services = () => {
   const services = [
@@ -81,6 +83,12 @@ const Services = () => {
             <ServiceCard key={index} service={service} />
           ))}
         </div>
+        <Link
+          href="/services"
+          className="flex items-center justify-center mt-10"
+        >
+          <Button variant="secondary" label="See All Service" />
+        </Link>
       </div>
     </Container>
   );
