@@ -1,0 +1,61 @@
+import Image, { StaticImageData } from "next/image";
+import { GRADIENTS, ICONS } from "../../../../public/assets";
+
+type TServiceCardProps = {
+  service: {
+    heading: string;
+    subHeading: string;
+    description: string;
+    pointers: string[];
+    image: StaticImageData;
+  };
+};
+const ServiceCard = ({ service }: TServiceCardProps) => {
+  return (
+    <div className="p-10 rounded-4xl border border-primary-20 flex items-center justify-between relative">
+      <Image
+        src={GRADIENTS.serviceCardGradient}
+        alt={"Service Card Gradient"}
+        className="absolute top-0 left-0 w-full h-full rounded-4xl object-cover -z-10"
+      />
+      <div>
+        <h2 className="text-[32px] font-semibold font-Uncut-Sans leading-normal text-white">
+          {service.heading}
+        </h2>
+        <div className={`flex items-center gap-2.5 mt-3`}>
+          <Image
+            src={ICONS.blueStar}
+            alt="Blue Star Icon"
+            className="w-[22px] h-[22px]"
+          />
+          <h3 className="font-Inter font-semibold text-white">
+            {service.subHeading}
+          </h3>
+        </div>
+
+        <p className="text-sm text-neutral-35 font-Inter max-w-[698px] mt-5">
+          {service.description}
+        </p>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4 mt-8 max-w-[400px]">
+          {service?.pointers?.map((item: string) => (
+            <p
+              key={item}
+              className="text-sm text-neutral-35 font-Inter max-w-[698px]"
+            >
+              ↳ {item}
+            </p>
+          ))}
+        </div>
+      </div>
+
+      <Image
+        src={service.image}
+        alt={service.heading}
+        // className=
+      />
+    </div>
+  );
+};
+
+export default ServiceCard;
