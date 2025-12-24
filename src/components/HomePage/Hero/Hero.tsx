@@ -10,7 +10,7 @@ const Hero = () => {
   return (
     <div className="w-full font-Figtree">
       <Container>
-        <div className="relative z-10 flex items-center justify-between mt-64">
+        <div className="relative z-10 flex items-center justify-between mt-40">
           {/* Left side contents */}
           <div className="max-w-[700px]">
             <div className="bg-white border border-neutral-25 rounded-3xl py-1.5 px-3.5 text-neutral-20 flex items-center gap-2 font-Inter w-fit">

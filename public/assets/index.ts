@@ -12,6 +12,7 @@ import aiIntegrationService from "./images/ai-integration-service.webp";
 import featuredProjectGradient from "./images/gradients/featured-project-gradient.png";
 import serviceCardGradient from "./images/gradients/service-card-gradient.png";
 import footerGradient from "./images/gradients/footer-gradient.png";
+import ctaGradientAbove from "./images/gradients/cta-gradient-above.png";
 
 // Icons
 import code from "./icons/code.svg";
@@ -45,4 +46,5 @@ export const GRADIENTS = {
   featuredProjectGradient,
   serviceCardGradient,
   footerGradient,
+  ctaGradientAbove,
 };
