@@ -7,12 +7,14 @@ import webDevelopmentService from "./images/web-development-service.webp";
 import appDevelopmentService from "./images/app-development-service.webp";
 import seoService from "./images/seo-service.webp";
 import aiIntegrationService from "./images/ai-integration-service.webp";
+import howItWorks from "./images/how-it-works.webp";
 
 // Gradients
 import featuredProjectGradient from "./images/gradients/featured-project-gradient.png";
 import serviceCardGradient from "./images/gradients/service-card-gradient.png";
 import footerGradient from "./images/gradients/footer-gradient.png";
 import ctaGradientAbove from "./images/gradients/cta-gradient-above.png";
+import howItWorksGradient from "./images/gradients/how-it-works-gradient.png";
 
 // Icons
 import code from "./icons/code.svg";
@@ -40,6 +42,7 @@ export const IMAGES = {
   appDevelopmentService,
   seoService,
   aiIntegrationService,
+  howItWorks
 };
 
 export const GRADIENTS = {
@@ -47,4 +50,5 @@ export const GRADIENTS = {
   serviceCardGradient,
   footerGradient,
   ctaGradientAbove,
+  howItWorksGradient
 };

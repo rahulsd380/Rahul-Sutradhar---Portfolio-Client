@@ -1,6 +1,7 @@
 import AboutMe from "@/components/HomePage/AboutMe/AboutMe";
 import FeaturedProjects from "@/components/HomePage/FeaturedProjects/FeaturedProjects";
 import Hero from "@/components/HomePage/Hero/Hero";
+import HowItWorks from "@/components/HomePage/HowItWorks/HowItWorks";
 import Services from "@/components/HomePage/Services/Services";
 import CTA from "@/components/Reusable/CTA/CTA";
 import Testimonial from "@/components/Shared/Testimonial/Testimonial";
@@ -12,6 +13,7 @@ const Home = () => {
       <AboutMe />
       <FeaturedProjects />
       <Services />
+      <HowItWorks/>
       <Testimonial/>
       <div className="mb-[150px] mt-16 w-full">
         <CTA />
