@@ -5,6 +5,7 @@ import HowItWorks from "@/components/HomePage/HowItWorks/HowItWorks";
 import Services from "@/components/HomePage/Services/Services";
 import CTA from "@/components/Reusable/CTA/CTA";
 import Testimonial from "@/components/Shared/Testimonial/Testimonial";
+import WhoIHelp from "@/components/Shared/WhoIHelp/WhoIHelp";
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
       <AboutMe />
       <FeaturedProjects />
       <Services />
+      <WhoIHelp/>
       <HowItWorks/>
       <Testimonial/>
       <div className="mb-[150px] mt-16 w-full">

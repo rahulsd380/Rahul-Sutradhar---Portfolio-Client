@@ -8,6 +8,11 @@ import appDevelopmentService from "./images/app-development-service.webp";
 import seoService from "./images/seo-service.webp";
 import aiIntegrationService from "./images/ai-integration-service.webp";
 import howItWorks from "./images/how-it-works.webp";
+import dottedBg from "./images/dotted-bg.webp";
+import linnerVector from "./images/linner-vector.webp";
+import projectDelivered from "./images/project-delivered.webp";
+import agency from "./images/agency.webp";
+import startup from "./images/startup.webp";
 
 // Gradients
 import featuredProjectGradient from "./images/gradients/featured-project-gradient.png";
@@ -42,7 +47,12 @@ export const IMAGES = {
   appDevelopmentService,
   seoService,
   aiIntegrationService,
-  howItWorks
+  howItWorks,
+  dottedBg,
+  linnerVector,
+  projectDelivered,
+  agency,
+  startup,
 };
 
 export const GRADIENTS = {
