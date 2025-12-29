@@ -24,6 +24,8 @@ import footerGradient from "./images/gradients/footer-gradient.png";
 import ctaGradientAbove from "./images/gradients/cta-gradient-above.png";
 import howItWorksGradient from "./images/gradients/how-it-works-gradient.png";
 import aboutMeGradient from "./images/gradients/about-me-gradient.png";
+import technologyToolboxGradient from "./images/gradients/technology-toolbox-gradient.png";
+import profileOverviewGradient from "./images/gradients/profile-overview-gradient.svg";
 
 // Icons
 import code from "./icons/code.svg";
@@ -69,4 +71,6 @@ export const GRADIENTS = {
   ctaGradientAbove,
   howItWorksGradient,
   aboutMeGradient,
+  technologyToolboxGradient,
+  profileOverviewGradient,
 };

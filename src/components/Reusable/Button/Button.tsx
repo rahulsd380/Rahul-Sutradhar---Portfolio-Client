@@ -12,6 +12,7 @@ type ButtonProps = {
   showIcon?: boolean;
   href?: string;
   className?: string;
+  icon?: ReactNode
 };
 
 const Button: React.FC<ButtonProps> = ({
@@ -23,6 +24,7 @@ const Button: React.FC<ButtonProps> = ({
   showIcon = true,
   href,
   className,
+  icon = <RxArrowTopRight className="text-lg md:text-xl font-extrabold" />
 }) => {
   const baseClasses =
     "rounded-lg shadow-button px-3 md:px-7 py-2.5 font-semibold font-Inter flex items-center gap-2 w-fit transition-all duration-200 cursor-pointer disabled:cursor-not-allowed disabled:opacity-50 hover:scale-105 text-xs md:text-base";
@@ -37,7 +39,7 @@ const Button: React.FC<ButtonProps> = ({
   const content = (
     <>
       {label}
-      {showIcon && <RxArrowTopRight className="text-lg md:text-xl font-extrabold" />}
+      {showIcon && icon}
     </>
   );
 
