@@ -12,14 +12,14 @@ const Home = () => {
     <div>
       <Hero />
       <AboutMe />
-      {/* <FeaturedProjects />
-      <Services />
-      <WhoIHelp/>
-      <HowItWorks/>
-      <Testimonial/>
-      <div className="mb-[150px] mt-16 w-full">
-        <CTA />
-      </div> */}
+      <FeaturedProjects />
+      {/* <Services /> */}
+      {/* <WhoIHelp/> */}
+      {/* <HowItWorks/> */}
+      {/* <Testimonial/> */}
+      {/* <div className="mb-[150px] mt-16 w-full"> */}
+        {/* <CTA /> */}
+      {/* </div> */}
     </div>
   );
 };

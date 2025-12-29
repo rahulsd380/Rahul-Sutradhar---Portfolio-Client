@@ -7,7 +7,7 @@ import Button from "@/components/Reusable/Button/Button";
 
 const FeaturedProjects = () => {
   return (
-    <div className="relative py-[100px]">
+    <div className="relative py-7 lg:py-[100px]">
       <Image
         src={GRADIENTS.featuredProjectGradient}
         alt=""
@@ -22,7 +22,7 @@ const FeaturedProjects = () => {
             description="A few examples of how I build digital experiences that are simple, scalable, and built for impact."
           />
 
-          <div className="grid grid-cols-2 gap-[30px] mt-[70px]">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-[30px] mt-13 lg:mt-[70px]">
             {[1, 2, 3, 4]?.map((_, index) => (
               <ProjectCard key={index} />
             ))}
