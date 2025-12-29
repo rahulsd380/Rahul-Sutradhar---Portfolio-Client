@@ -13,12 +13,12 @@ const AboutMePage = () => {
       <AboutMeHero />
       <AboutMe />
       <MissionAndVision />
-      <WorkExperience />
+      {/* <WorkExperience /> */}
       {/* <TechnologyToolbox/> */}
-      <WhoIHelp />
-      <HowItWorks />
-      <Testimonial />
-      <ProfileOverview/>
+      {/* <WhoIHelp /> */}
+      {/* <HowItWorks /> */}
+      {/* <Testimonial /> */}
+      {/* <ProfileOverview /> */}
     </div>
   );
 };

@@ -20,7 +20,7 @@ const AboutMeHero = () => {
       <Image
         src={IMAGES.aboutMeHero}
         alt=""
-        className="w-full absolute top-0 h-[700px]"
+        className="w-full absolute top-0 h-[500px] lg:h-[700px]"
       />
     </div>
   );

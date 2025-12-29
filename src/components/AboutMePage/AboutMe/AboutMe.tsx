@@ -7,7 +7,7 @@ import { LuLaptopMinimalCheck } from "react-icons/lu";
 
 const AboutMe = () => {
   return (
-    <div className="py-[100px] relative mt-40">
+    <div className="py-[100px] relative mt-28 lg:mt-40">
       <Image
         src={GRADIENTS.aboutMeGradient}
         alt=""
