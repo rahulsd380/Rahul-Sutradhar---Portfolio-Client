@@ -1,8 +1,10 @@
+"use client";
 import Image from "next/image";
 import { GRADIENTS, ICONS } from "../../../../public/assets";
 import Container from "../Container/Container";
 import Heading from "../Heading/Heading";
 import Button from "../Button/Button";
+import Link from "next/link";
 
 const CTA = () => {
   return (
@@ -32,8 +34,12 @@ const CTA = () => {
           />
 
           <div className="flex items-center gap-3 md:gap-6 mt-9">
-            <Button variant="primary" label="Schedule a Free Call" />
-            <Button variant="secondary" label="See All Services" />
+            <Link href="book-call">
+              <Button variant="primary" label="Schedule a Free Call" />
+            </Link>
+            <Link href="/services">
+              <Button variant="secondary" label="See All Services" />
+            </Link>
           </div>
         </div>
       </div>

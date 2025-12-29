@@ -44,7 +44,7 @@ const Footer = () => {
         </div>
 
         {/* Logo, Social Media, Services, Contact info */}
-        <div className="flex flex-col gap-10 xl:gap-0 justify-between py-10 xl:py-16 border-b border-neutral-30">
+        <div className="flex flex-col lg:flex-row gap-10 xl:gap-0 justify-between py-10 xl:py-16 border-b border-neutral-30">
           {/* Left side contents */}
           <div>
             {/* Logo */}
@@ -144,7 +144,7 @@ const Footer = () => {
         <Marquee speed={60} gradient={false}>
           <h2 className="text-[650px] leading-none translate-y-[60px] font-Uncut-Sans font-bold text-white whitespace-nowrap overflow-hidden">
             Rahul Sutradhar | Web Development | App Development | UI/UX Design
-          </h2> 
+          </h2>
         </Marquee>
 
         <Image

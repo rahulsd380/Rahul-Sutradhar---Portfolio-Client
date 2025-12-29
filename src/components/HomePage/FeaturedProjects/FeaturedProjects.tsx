@@ -1,9 +1,11 @@
+"use client";
 import Container from "@/components/Reusable/Container/Container";
 import Heading from "@/components/Reusable/Heading/Heading";
 import ProjectCard from "./ProjectCard";
 import Image from "next/image";
 import { GRADIENTS } from "../../../../public/assets";
 import Button from "@/components/Reusable/Button/Button";
+import Link from "next/link";
 
 const FeaturedProjects = () => {
   return (
@@ -28,7 +30,9 @@ const FeaturedProjects = () => {
             ))}
           </div>
           <div className="flex items-center justify-center mt-10">
-            <Button variant="secondary" label="View All" />
+            <Link href={"/portfolio"}>
+              <Button variant="secondary" label="View All" />
+            </Link>
           </div>
         </>
       </Container>

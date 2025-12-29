@@ -30,10 +30,10 @@ const Hero = () => {
             </p>
 
             <div className="flex items-center gap-3 md:gap-6 mt-10">
-              <Link href={"/"}>
+              <Link href={"/contact-me"}>
                 <Button label="Start Your Project" />
               </Link>
-              <Link href={"/"}>
+              <Link href={"/portfolio"}>
                 <Button variant="secondary" label="View Portfolio" />
               </Link>
             </div>

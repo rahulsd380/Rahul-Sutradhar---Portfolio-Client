@@ -1,6 +1,7 @@
 import Container from "@/components/Reusable/Container/Container";
 import Button from "@/components/Reusable/Button/Button";
 import Heading from "@/components/Reusable/Heading/Heading";
+import Link from "next/link";
 
 const AboutMe = () => {
   const STATS = [
@@ -43,11 +44,11 @@ const AboutMe = () => {
             on aims to save time, boost revenue, and keep your business running
             smoother.
           </p>
-          <Button label="Read More" />
+          <Link href={"/about-me"}>
+            <Button label="Read More" />
+          </Link>
         </div>
       </div>
-
-     
     </Container>
   );
 };
