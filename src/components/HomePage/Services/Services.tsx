@@ -1,3 +1,5 @@
+"use client";
+import { motion } from "framer-motion";
 import Container from "@/components/Reusable/Container/Container";
 import Heading from "@/components/Reusable/Heading/Heading";
 import ServiceCard from "./ServiceCard";
@@ -72,23 +74,36 @@ const Services = () => {
   return (
     <Container>
       <div className="py-0 lg:py-[100px]">
-        <Heading
-          subHeading="Services"
-          styledHeading="Smart Digital"
-          heading="Solutions for Growing Businesses"
-          description="I help brands turn ideas into fast, reliable, and growth-focused systems from websites to full automation platforms."
-        />
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+        >
+          <Heading
+            subHeading="Services"
+            styledHeading="Smart Digital"
+            heading="Solutions for Growing Businesses"
+            description="I help brands turn ideas into fast, reliable, and growth-focused systems from websites to full automation platforms."
+          />
+        </motion.div>
+
         <div className="flex flex-col gap-10 mt-[70px]">
           {services.map((service, index) => (
-            <ServiceCard key={index} service={service} />
+            <ServiceCard key={index} service={service} index={index} />
           ))}
         </div>
-        <Link
-          href="/services"
+
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
           className="flex items-center justify-center mt-10"
         >
-          <Button variant="secondary" label="See All Service" />
-        </Link>
+          <Link href="/services">
+            <Button variant="secondary" label="See All Service" />
+          </Link>
+        </motion.div>
       </div>
     </Container>
   );
