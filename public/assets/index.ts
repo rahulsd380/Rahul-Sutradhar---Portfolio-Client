@@ -16,6 +16,10 @@ import startup from "./images/startup.webp";
 import aboutMeHero from "./images/about-me-hero.png";
 import mission from "./images/mission.webp";
 import vision from "./images/vision.webp";
+import webDevelopmentDetails from "./images/web-development-details.webp";
+import appDevelopmentDetails from "./images/app-development-details.webp";
+import seoDetails from "./images/seo-details.webp";
+import aiIntegrationDetails from "./images/ai-integration-details.webp";
 
 // Gradients
 import featuredProjectGradient from "./images/gradients/featured-project-gradient.png";
@@ -26,6 +30,7 @@ import howItWorksGradient from "./images/gradients/how-it-works-gradient.png";
 import aboutMeGradient from "./images/gradients/about-me-gradient.png";
 import technologyToolboxGradient from "./images/gradients/technology-toolbox-gradient.png";
 import profileOverviewGradient from "./images/gradients/profile-overview-gradient.svg";
+import serviceDetailsCardGradient from "./images/gradients/service-details-card-gradient.svg";
 
 // Icons
 import code from "./icons/code.svg";
@@ -62,6 +67,11 @@ export const IMAGES = {
   aboutMeHero,
   mission,
   vision,
+  webDevelopmentDetails,
+  appDevelopmentDetails,
+  seoDetails,
+  aiIntegrationDetails,
+  
 };
 
 export const GRADIENTS = {
@@ -73,4 +83,5 @@ export const GRADIENTS = {
   aboutMeGradient,
   technologyToolboxGradient,
   profileOverviewGradient,
+  serviceDetailsCardGradient,
 };
