@@ -40,8 +40,8 @@ const HowItWorks = () => {
         className="absolute left-0 -top-96"
       />
       <Container>
-        <div className="flex items-center justify-between z-10 relative">
-          <div className="w-1/2">
+        <div className="flex flex-col lg:flex-row items-center justify-between gap-10 md:gap-16 xl:gap-0 z-10 relative">
+          <div className="w-full lg:w-1/2">
             <Heading
               subHeading="How It Work"
               styledHeading="Building digital"
@@ -51,7 +51,7 @@ const HowItWorks = () => {
             <Image src={IMAGES.howItWorks} alt="" className="mt-10" />
           </div>
 
-          <div className="flex flex-col gap-18 w-1/2">
+          <div className="flex flex-col gap-10 lg:gap-14 2xl:gap-18 w-full lg:w-1/2">
             {processSteps?.map((step, index) => (
               <div key={step?.id} className="flex gap-8 items-start relative">
                 {index !== processSteps?.length - 1 && (
@@ -61,10 +61,10 @@ const HowItWorks = () => {
                   {step?.id}
                 </div>
                 <div className="flex-1">
-                  <h2 className="text-white font-Uncut-Sans text-xl font-medium">
+                  <h2 className="text-white font-Uncut-Sans text-lg md:text-xl font-medium">
                     {step?.title}
                   </h2>
-                  <p className="text-neutral-35 font-Inter mt-2">
+                  <p className="text-neutral-35 font-Inter mt-2 text-xs md:text-base">
                     {step?.description}
                   </p>
                 </div>

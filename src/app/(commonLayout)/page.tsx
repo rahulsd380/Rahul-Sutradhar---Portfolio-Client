@@ -14,8 +14,8 @@ const Home = () => {
       <AboutMe />
       <FeaturedProjects />
       <Services />
-      {/* <WhoIHelp/> */}
-      {/* <HowItWorks/> */}
+      <WhoIHelp/>
+      <HowItWorks/>
       {/* <Testimonial/> */}
       {/* <div className="mb-[150px] mt-16 w-full"> */}
         {/* <CTA /> */}
