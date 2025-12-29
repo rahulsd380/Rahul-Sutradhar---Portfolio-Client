@@ -1,10 +1,10 @@
 /* eslint-disable react/no-unescaped-entities */
 import Image from "next/image";
-import Heading from "../Reusable/Heading/Heading";
-import { IMAGES } from "../../../public/assets";
-import Button from "../Reusable/Button/Button";
+import Heading from "../../Reusable/Heading/Heading";
+import { IMAGES } from "../../../../public/assets";
+import Button from "../../Reusable/Button/Button";
 import ContactUsForm from "./ContactUsForm";
-import Container from "../Reusable/Container/Container";
+import Container from "../../Reusable/Container/Container";
 
 const ContactMe = () => {
   const stats = [

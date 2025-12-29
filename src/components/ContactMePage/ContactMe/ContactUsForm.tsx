@@ -1,9 +1,9 @@
 "use client";
 import { useForm } from "react-hook-form";
-import TextInput from "../Reusable/TextInput/TextInput";
-import Textarea from "../Reusable/TextArea/TextArea";
-import SelectDropdown from "../Reusable/SelectDropdown/SelectDropdown";
-import Button from "../Reusable/Button/Button";
+import TextInput from "../../Reusable/TextInput/TextInput";
+import Textarea from "../../Reusable/TextArea/TextArea";
+import SelectDropdown from "../../Reusable/SelectDropdown/SelectDropdown";
+import Button from "../../Reusable/Button/Button";
 
 type TFormData = {
   name: string;
