@@ -11,6 +11,32 @@ interface MenuProps {
 }
 
 const Menu = ({ closeMenu }: MenuProps) => {
+  const navlinks = [
+    {
+      label: "Home",
+      path: "/",
+    },
+    {
+      label: "About Me",
+      path: "/about-me",
+    },
+    {
+      label: "Portfolio",
+      path: "/portfolio",
+    },
+    {
+      label: "Services",
+      path: "/services",
+    },
+    {
+      label: "Blog",
+      path: "/blog",
+    },
+    {
+      label: "Contact",
+      path: "/contact-me",
+    },
+  ];
   return (
     <div className="bg-neutral-55 rounded-xl p-7 w-[350px] md:w-[450px] relative font-Inter overflow-hidden">
       <Image
@@ -33,24 +59,22 @@ const Menu = ({ closeMenu }: MenuProps) => {
       </div>
 
       <div className="flex flex-col gap-2 mt-8 relative">
-        {["Home", "About Me", "Projects", "Services", "Blog", "Contact"].map(
-          (item, index) => (
-            <motion.div
-              key={item}
-              initial={{ opacity: 0, x: 20 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ delay: index * 0.05 }}
+        {navlinks?.map((item, index) => (
+          <motion.div
+            key={item?.label}
+            initial={{ opacity: 0, x: 20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ delay: index * 0.05 }}
+          >
+            <Link
+              href={item?.path}
+              className="text-white hover:text-primary-25 text-lg font-medium transition-colors duration-300 block py-2"
+              onClick={closeMenu}
             >
-              <Link
-                href="/"
-                className="text-white hover:text-primary-25 text-lg font-medium transition-colors duration-300 block py-2"
-                onClick={closeMenu}
-              >
-                {item}
-              </Link>
-            </motion.div>
-          )
-        )}
+              {item?.label}
+            </Link>
+          </motion.div>
+        ))}
       </div>
 
       <div className="space-y-4 flex flex-col mt-14 relative">
