@@ -13,6 +13,7 @@ import linnerVector from "./images/linner-vector.webp";
 import projectDelivered from "./images/project-delivered.webp";
 import agency from "./images/agency.webp";
 import startup from "./images/startup.webp";
+import aboutMeHero from "./images/about-me-hero.png";
 
 // Gradients
 import featuredProjectGradient from "./images/gradients/featured-project-gradient.png";
@@ -53,6 +54,7 @@ export const IMAGES = {
   projectDelivered,
   agency,
   startup,
+  aboutMeHero,
 };
 
 export const GRADIENTS = {

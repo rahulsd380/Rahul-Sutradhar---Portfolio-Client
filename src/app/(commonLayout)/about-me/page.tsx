@@ -1,8 +1,9 @@
+import AboutMeHero from "@/components/AboutMePage/AboutMeHero/AboutMeHero";
 
 const AboutMe = () => {
     return (
         <div>
-            sad
+            <AboutMeHero/>
         </div>
     );
 };

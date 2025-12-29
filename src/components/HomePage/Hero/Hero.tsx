@@ -18,7 +18,7 @@ const Hero = () => {
               <p>Available for work</p>
             </div>
             <h1 className="text-white font-bold text-[32px] md:text-[48px] lg:text-[40px] xl:text-[60px] leading-10 md:leading-14 lg:leading-12 xl:leading-17 2xl:leading-20 mt-6 font-Uncut-Sans">
-              Hi, I’m Rahul I Build{" "}
+              I Build{" "}
               <span className="font-Instrument-Serif font-normal italic">
                 Digital Solutions
               </span>{" "}

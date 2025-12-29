@@ -144,7 +144,7 @@ const Footer = () => {
         <Marquee speed={60} gradient={false}>
           <h2 className="text-[650px] leading-none translate-y-[60px] font-Uncut-Sans font-bold text-white whitespace-nowrap overflow-hidden">
             Rahul Sutradhar | Web Development | App Development | UI/UX Design
-          </h2>
+          </h2> 
         </Marquee>
 
         <Image
