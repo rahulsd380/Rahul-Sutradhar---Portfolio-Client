@@ -12,7 +12,7 @@ const Navbar = () => {
       <div className="flex items-center justify-between py-[30px] font-Figtree z-10 relative">
         <Link
           href={"/"}
-          className="text-2xl text-white uppercase font-bold flex flex-col"
+          className="text-xl md:text-2xl text-white uppercase font-bold flex flex-col"
         >
           <div className="flex items-center gap-3">
             Rahul
@@ -24,13 +24,13 @@ const Navbar = () => {
         <div className="flex items-center gap-[30px]">
           <Link
             href={"/contact-me"}
-            className="text-white font-semibold uppercase underline flex items-center gap-1"
+            className="text-white font-semibold uppercase underline hidden md:flex items-center gap-1"
           >
             Let's talk
             <RxArrowTopRight className="text-xl font-extrabold" />
           </Link>
 
-          <button className="bg-white hover:bg-primary-10 hover:border-primary-15 hover:shadow-button size-[60px] rounded-full text-3xl font-bold text-neutral-10 hover:text-white flex items-center justify-center cursor-pointer transition duration-300">
+          <button className="bg-white hover:bg-primary-10 hover:border-primary-15 hover:shadow-button size-10 md:size-[60px] rounded-full text-2xl md:text-3xl font-bold text-neutral-10 hover:text-white flex items-center justify-center cursor-pointer transition duration-300">
             <IoMenuOutline />
           </button>
         </div>

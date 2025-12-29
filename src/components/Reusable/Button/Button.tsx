@@ -25,7 +25,7 @@ const Button: React.FC<ButtonProps> = ({
   className,
 }) => {
   const baseClasses =
-    "rounded-lg shadow-button px-7 py-2.5 font-semibold font-Inter flex items-center gap-2 w-fit transition-all duration-200 cursor-pointer disabled:cursor-not-allowed disabled:opacity-50 hover:scale-105";
+    "rounded-lg shadow-button px-3 md:px-7 py-2.5 font-semibold font-Inter flex items-center gap-2 w-fit transition-all duration-200 cursor-pointer disabled:cursor-not-allowed disabled:opacity-50 hover:scale-105 text-xs md:text-base";
 
   const variantClasses =
     variant === "primary"
@@ -37,7 +37,7 @@ const Button: React.FC<ButtonProps> = ({
   const content = (
     <>
       {label}
-      {showIcon && <RxArrowTopRight className="text-xl font-extrabold" />}
+      {showIcon && <RxArrowTopRight className="text-lg md:text-xl font-extrabold" />}
     </>
   );
 

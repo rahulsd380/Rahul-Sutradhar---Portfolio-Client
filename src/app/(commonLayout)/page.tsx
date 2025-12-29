@@ -11,7 +11,7 @@ const Home = () => {
   return (
     <div>
       <Hero />
-      <AboutMe />
+      {/* <AboutMe />
       <FeaturedProjects />
       <Services />
       <WhoIHelp/>
@@ -19,7 +19,7 @@ const Home = () => {
       <Testimonial/>
       <div className="mb-[150px] mt-16 w-full">
         <CTA />
-      </div>
+      </div> */}
     </div>
   );
 };
