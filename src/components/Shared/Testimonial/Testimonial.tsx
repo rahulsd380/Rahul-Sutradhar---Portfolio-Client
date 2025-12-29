@@ -12,12 +12,12 @@ const Testimonial = () => {
         description="We help businesses grow with design, strategy, and genuine care but don’t just take our word for it."
       />
       
-      <div className="mt-[70px] space-y-6 relative">
+      <div className="mt-13 lg:mt-[70px] space-y-6 relative">
         {/* Left Gradient Blur */}
-        <div className="absolute left-0 top-0 w-32 h-full bg-linear-to-r from-neutral-10 to-transparent z-10 pointer-events-none"></div>
+        <div className="absolute left-0 top-0 w-32 h-full bg-linear-to-r from-neutral-10 to-transparent z-10 pointer-events-none hidden md:block"></div>
         
         {/* Right Gradient Blur */}
-        <div className="absolute right-0 top-0 w-32 h-full bg-linear-to-l from-neutral-10 to-transparent z-10 pointer-events-none"></div>
+        <div className="absolute right-0 top-0 w-32 h-full bg-linear-to-l from-neutral-10 to-transparent z-10 pointer-events-none hidden md:block"></div>
         
         {/* Top Marquee */}
         <div className="relative">

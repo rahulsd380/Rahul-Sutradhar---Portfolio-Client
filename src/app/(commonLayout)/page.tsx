@@ -16,10 +16,10 @@ const Home = () => {
       <Services />
       <WhoIHelp/>
       <HowItWorks/>
-      {/* <Testimonial/> */}
-      {/* <div className="mb-[150px] mt-16 w-full"> */}
-        {/* <CTA /> */}
-      {/* </div> */}
+      <Testimonial/>
+      <div className="mb-[150px] mt-16 w-full">
+        <CTA />
+      </div>
     </div>
   );
 };

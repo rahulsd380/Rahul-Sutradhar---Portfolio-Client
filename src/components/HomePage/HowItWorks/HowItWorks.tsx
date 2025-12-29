@@ -37,7 +37,7 @@ const HowItWorks = () => {
       <Image
         src={GRADIENTS.howItWorksGradient}
         alt=""
-        className="absolute left-0 -top-96"
+        className="absolute left-0 -top-32 md:-top-96"
       />
       <Container>
         <div className="flex flex-col lg:flex-row items-center justify-between gap-10 md:gap-16 xl:gap-0 z-10 relative">

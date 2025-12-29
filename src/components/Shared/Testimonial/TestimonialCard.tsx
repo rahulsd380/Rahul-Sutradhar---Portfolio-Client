@@ -7,7 +7,7 @@ const TestimonialCard = () => {
   return (
     <div className="bg-neutral-10 rounded-xl border border-primary-25 p-6 font-Inter flex flex-col justify-between gap-5 max-w-[430px] mr-6">
       <FaQuoteLeft className="text-primary-10 text-3xl" />
-      <p className="text-neutral-50">
+      <p className="text-sm md:text-base text-neutral-50">
         Webinxo turned our outdated website into a clean, high-converting
         platform. Our leads have nearly doubled since launch.
       </p>

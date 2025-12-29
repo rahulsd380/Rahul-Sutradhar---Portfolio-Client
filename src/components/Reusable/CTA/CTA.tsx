@@ -31,7 +31,7 @@ const CTA = () => {
             description="Let’s talk about what’s slowing you down  and build the system that fixes it."
           />
 
-          <div className="flex items-center gap-6 mt-9">
+          <div className="flex items-center gap-3 md:gap-6 mt-9">
             <Button variant="primary" label="Schedule a Free Call" />
             <Button variant="secondary" label="See All Services" />
           </div>
