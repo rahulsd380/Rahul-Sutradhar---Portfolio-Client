@@ -19,13 +19,13 @@ const Footer = () => {
   return (
     <div>
       <Container>
-        <div className="flex items-center justify-between border-b border-neutral-30 pb-11">
-          <div className="flex items-center">
+        <div className="flex flex-col lg:flex-row items-center justify-between gap-5 lg:gap-0 border-b border-neutral-30 pb-11">
+          <div className="flex w-full lg:w-fit overflow-y-auto items-center">
             {navinks?.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
-                className={`text-white font-Figtree font-medium transition-colors duration-300 hover:bg-primary-10 px-6 py-2.5 rounded-3xl ${
+                className={`text-white font-Figtree font-medium transition-colors duration-300 hover:bg-primary-10 px-6 py-2 md:py-2.5 rounded-3xl ${
                   pathname === link.href
                     ? "text-white bg-primary-10"
                     : "text-neutral-35"
@@ -37,20 +37,20 @@ const Footer = () => {
           </div>
           <a
             href="mailto:hello@rahulsutradhar.com"
-            className="text-[50px] font-Instrument-Serif text-white"
+            className="text-[32px] md:text-[50px] lg:text-[32px] 2xl:text-[50px] font-Instrument-Serif text-white"
           >
             hello@rahulsutradhar.com
           </a>
         </div>
 
         {/* Logo, Social Media, Services, Contact info */}
-        <div className="flex justify-between py-16 border-b border-neutral-30">
+        <div className="flex flex-col gap-10 xl:gap-0 justify-between py-10 xl:py-16 border-b border-neutral-30">
           {/* Left side contents */}
           <div>
             {/* Logo */}
             <Link
               href={"/"}
-              className="text-[38px] text-white uppercase font-bold flex flex-col"
+              className="text-[28px] lg:text-[38px] text-white uppercase font-bold flex flex-col"
             >
               <div className="flex items-center gap-3">
                 Rahul
@@ -87,14 +87,14 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="font-Inter flex justify-between gap-24">
+          <div className="font-Inter flex flex-col md:flex-row justify-baseline xl:justify-between gap-10 md:gap-16 xl:gap-24">
             <div>
               <h2 className="font-bold text-neutral-35">Services</h2>
               {services?.map((service) => (
                 <div key={service?.label} className="space-y-4 mt-6">
                   <Link
                     href={service.href}
-                    className="text-white hover:underline"
+                    className="text-white hover:underline text-sm md:text-base"
                   >
                     {service.label}
                   </Link>
@@ -106,7 +106,10 @@ const Footer = () => {
 
               <div className="space-y-5 mt-6 text-white">
                 {contactInfo?.map((service) => (
-                  <div key={service.label} className="flex items-center gap-3">
+                  <div
+                    key={service.label}
+                    className="flex items-center gap-3 text-sm md:text-base"
+                  >
                     <Image
                       src={service.icon}
                       alt={service.label}
