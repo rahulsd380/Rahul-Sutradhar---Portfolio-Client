@@ -2,6 +2,7 @@ import Container from "@/components/Reusable/Container/Container";
 import Image from "next/image";
 import { IMAGES } from "../../../../public/assets";
 import Button from "@/components/Reusable/Button/Button";
+import Heading from "@/components/Reusable/Heading/Heading";
 
 const MissionAndVision = () => {
   const stats = [
@@ -26,12 +27,7 @@ const MissionAndVision = () => {
     <div className="py-[100px] relative">
       <div className="size-[344px] rounded-full bg-primary-10 right-0 top-20 absolute blur-[100px]"></div>
       <Container>
-        <h3 className="text-white text-[32px] md:text-[48px] lg:text-[40px] xl:text-[55px] mt-[30px] font-Uncut-Sans leading-10 md:leading-14 lg:leading-12 xl:leading-16 text-center">
-          <span className="font-Instrument-Serif font-normal italic">
-            Mission
-          </span>{" "}
-          & Vision
-        </h3>
+        <Heading styledHeading="Mission" heading="& Vision" />
 
         <div className="font-Inter flex gap-12 mt-16">
           <div className="w-[286px] relative">
