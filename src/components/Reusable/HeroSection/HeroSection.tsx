@@ -12,7 +12,7 @@ const HeroSection = ({
   subHeading: string;
   styledHeading: string;
   heading: string;
-  description: string;
+  description?: string;
 }) => {
   return (
     <div className="w-full font-Figtree">

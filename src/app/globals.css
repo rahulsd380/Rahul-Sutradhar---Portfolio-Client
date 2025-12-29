@@ -41,6 +41,8 @@
   --color-primary-15: #6D86F9;
   --color-primary-20: #9B8DFF;
   --color-primary-25: #0093E9;
+  --color-primary-30: #284df64d;
+  --color-primary-35: #284df666;
 
   /* neutral */
 
@@ -58,6 +60,7 @@
   --color-neutral-65: #284df61a;
   --color-neutral-70: #002dfd33;
   --color-neutral-75: #284df633;
+  --color-neutral-80: #ffffff1a;
 
 
   /* Shadows */
