@@ -11,8 +11,8 @@ const Home = () => {
   return (
     <div>
       <Hero />
-      {/* <AboutMe />
-      <FeaturedProjects />
+      <AboutMe />
+      {/* <FeaturedProjects />
       <Services />
       <WhoIHelp/>
       <HowItWorks/>

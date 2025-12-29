@@ -39,13 +39,13 @@ const Heading: React.FC<THeadingProps> = ({
             alt="Blue Star Icon"
             className="w-[22px] h-[22px]"
           />
-          <h3 className="font-Inter text-xl font-semibold text-white">
+          <h3 className="font-Inter text-base md:text-xl font-semibold text-white">
             {subHeading}
           </h3>
         </div>
       )}
 
-      <h3 className="text-white text-[55px] mt-[30px] font-Uncut-Sans leading-16 max-w-[644px]">
+      <h3 className="text-white text-[32px] md:text-[48px] lg:text-[40px] xl:text-[55px] mt-[30px] font-Uncut-Sans leading-10 md:leading-14 lg:leading-12 xl:leading-16 max-w-[644px]">
         <span className="font-Instrument-Serif font-normal italic">
           {styledHeading}
         </span>{" "}
@@ -53,7 +53,7 @@ const Heading: React.FC<THeadingProps> = ({
       </h3>
 
       {description && (
-        <p className="text-lg text-neutral-35 font-Inter max-w-[698px] mt-3">
+        <p className="text-sm md:text-lg lg:text-sm xl:text-lg text-neutral-35 font-Inter max-w-[698px] mt-3">
           {description}
         </p>
       )}
