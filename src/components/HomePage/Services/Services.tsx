@@ -71,7 +71,7 @@ const Services = () => {
 
   return (
     <Container>
-      <div className="py-[100px]">
+      <div className="py-0 lg:py-[100px]">
         <Heading
           subHeading="Services"
           styledHeading="Smart Digital"

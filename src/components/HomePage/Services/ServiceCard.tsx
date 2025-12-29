@@ -14,17 +14,17 @@ type TServiceCardProps = {
 };
 const ServiceCard = ({ service }: TServiceCardProps) => {
   return (
-    <div className="p-10 rounded-4xl border border-primary-20 flex items-center justify-between relative">
+    <div className="p-4 md:p-6 lg:p-10 rounded-2xl lg:rounded-4xl border border-primary-20 flex flex-col lg:flex-row items-center justify-between gap-10 relative">
       <Image
         src={GRADIENTS.serviceCardGradient}
         alt={"Service Card Gradient"}
-        className="absolute top-0 left-0 w-full h-full rounded-4xl object-cover -z-10"
+        className="absolute top-0 left-0 w-full h-full rounded-2xl lg:rounded-4xl object-cover -z-10 opacity-80 lg:opacity-100"
       />
       {/* Content and button */}
-      <div className="flex flex-col gap-14">
+      <div className="flex flex-col gap-7 md:gap-9 lg:gap-14">
         {/* Contents */}
         <div>
-          <h2 className="text-[32px] font-semibold font-Uncut-Sans leading-normal text-white">
+          <h2 className="text-xl md:text-[32px] font-semibold font-Uncut-Sans leading-normal text-white">
             {service.heading}
           </h2>
           <div className={`flex items-center gap-2.5 mt-3`}>
@@ -33,7 +33,7 @@ const ServiceCard = ({ service }: TServiceCardProps) => {
               alt="Blue Star Icon"
               className="w-[22px] h-[22px]"
             />
-            <h3 className="font-Inter font-semibold text-white">
+            <h3 className="font-Inter font-semibold text-white text-sm md:text-base">
               {service.subHeading}
             </h3>
           </div>
@@ -42,7 +42,7 @@ const ServiceCard = ({ service }: TServiceCardProps) => {
             {service.description}
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4 mt-8 max-w-[400px]">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4 mt-5 md:mt-8 max-w-[400px]">
             {service?.pointers?.map((item: string) => (
               <p
                 key={item}
