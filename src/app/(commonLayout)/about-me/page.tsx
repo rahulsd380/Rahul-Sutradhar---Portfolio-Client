@@ -15,10 +15,10 @@ const AboutMePage = () => {
       <MissionAndVision />
       <WorkExperience />
       {/* <TechnologyToolbox/> */}
-      {/* <WhoIHelp /> */}
-      {/* <HowItWorks /> */}
-      {/* <Testimonial /> */}
-      {/* <ProfileOverview /> */}
+      <WhoIHelp />
+      <HowItWorks />
+      <Testimonial />
+      <ProfileOverview />
     </div>
   );
 };

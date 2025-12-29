@@ -7,7 +7,7 @@ import { GoStarFill } from "react-icons/go";
 const WhoIHelp = () => {
   return (
     <Container>
-      <div className="py-[100px]">
+      <div className="py-7 lg:py-[100px]">
         <Heading
           subHeading="Who I Help"
           styledHeading="who"

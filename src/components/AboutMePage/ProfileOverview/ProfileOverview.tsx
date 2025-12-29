@@ -54,16 +54,16 @@ const ProfileOverview = () => {
     },
   ];
   return (
-    <div className="py-[200px] relative">
+    <div className="py-[100px] xl:py-[200px] relative">
       <Image
         src={GRADIENTS.profileOverviewGradient}
         alt={""}
         className="absolute left-0 top-10"
       />
       <Container>
-        <div className="flex gap-10">
+        <div className="flex flex-col lg:flex-row gap-10">
           {/* Left card */}
-          <div className="p-5 bg-neutral-65 rounded-xl border border-neutral-35/30 w-[50%] flex flex-col justify-between">
+          <div className="p-3 md:p-5 bg-neutral-65 rounded-xl border border-neutral-35/30 w-full lg:w-[50%] flex flex-col justify-between">
             {/* Profile */}
             <div className="relative">
               <div className="flex items-center gap-6">
@@ -72,7 +72,7 @@ const ProfileOverview = () => {
                   alt=""
                   className="size-20 rounded-full"
                 />
-                <div className="bg-white border border-neutral-25 rounded-3xl py-1.5 px-3.5 text-neutral-20 flex items-center gap-2 font-Inter text-sm md:text-base w-fit">
+                <div className="bg-white border border-neutral-25 rounded-3xl py-1.5 px-2 md:px-3.5 text-neutral-20 flex items-center gap-2 font-Inter text-xs md:text-base w-fit">
                   <Image src={ICONS.available} alt="" className="size-5" />
                   <p>Taking New Projects</p>
                 </div>
@@ -88,9 +88,12 @@ const ProfileOverview = () => {
             </div>
 
             {/* Buttons */}
-            <div className="flex items-center justify-end gap-3 md:gap-6 mt-12">
+            <div className="flex items-center justify-end gap-3 xl:gap-6 mt-12 w-full relative">
               <Link href={"/"}>
-                <Button label="Start Your Project" />
+                <Button
+                  label="Start Your Project"
+                  className="text-[11px] md:text-base lg:text-sm xl:text-base px-1.5"
+                />
               </Link>
               <Button
                 variant="secondary"
@@ -98,12 +101,13 @@ const ProfileOverview = () => {
                 icon={
                   <HiOutlineFolderDownload className="text-lg md:text-xl font-extrabold" />
                 }
+                className="text-[11px] md:text-base lg:text-sm xl:text-base px-1.5"
               />
             </div>
           </div>
 
           {/* Right cards */}
-          <div className="grid grid-cols-3 gap-5 w-[50%]">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-5 w-full lg:w-[50%]">
             {/* Social Media cards */}
             {socialMediaLinks.map((item, index) => {
               const isLast = index === socialMediaLinks.length - 1;
@@ -113,7 +117,7 @@ const ProfileOverview = () => {
                   key={item.title}
                   href={item.link}
                   className={`bg-neutral-70/70 hover:bg-primary-10 transition duration-300 group h-fit rounded-xl border border-neutral-35/30 p-4 relative overflow-hidden
-          ${isLast ? "col-span-3" : ""}`}
+          ${isLast ? "col-span-2 md:col-span-3" : ""}`}
                 >
                   <div className="w-[94px] h-[220px] absolute top-0 right-18 rounded-t-xl">
                     <svg
