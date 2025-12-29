@@ -20,18 +20,18 @@ const Menu = ({ closeMenu }: MenuProps) => {
       label: "About Me",
       path: "/about-me",
     },
-    {
-      label: "Portfolio",
-      path: "/portfolio",
-    },
+    // {
+    //   label: "Portfolio",
+    //   path: "/portfolio",
+    // },
     {
       label: "Services",
       path: "/services",
     },
-    {
-      label: "Blog",
-      path: "/blog",
-    },
+    // {
+    //   label: "Blog",
+    //   path: "/blog",
+    // },
     {
       label: "Contact",
       path: "/contact-me",
