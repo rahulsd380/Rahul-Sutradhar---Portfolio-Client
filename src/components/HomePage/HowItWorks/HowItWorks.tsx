@@ -33,7 +33,6 @@ const HowItWorks = () => {
 
   return (
     <div className="relative py-[100px] overflow-hidden">
-      {/* Fixed gradient position - centered vertically */}
       <Image
         src={GRADIENTS.howItWorksGradient}
         alt=""

@@ -14,6 +14,8 @@ import projectDelivered from "./images/project-delivered.webp";
 import agency from "./images/agency.webp";
 import startup from "./images/startup.webp";
 import aboutMeHero from "./images/about-me-hero.png";
+import mission from "./images/mission.webp";
+import vision from "./images/vision.webp";
 
 // Gradients
 import featuredProjectGradient from "./images/gradients/featured-project-gradient.png";
@@ -21,6 +23,7 @@ import serviceCardGradient from "./images/gradients/service-card-gradient.png";
 import footerGradient from "./images/gradients/footer-gradient.png";
 import ctaGradientAbove from "./images/gradients/cta-gradient-above.png";
 import howItWorksGradient from "./images/gradients/how-it-works-gradient.png";
+import aboutMeGradient from "./images/gradients/about-me-gradient.png";
 
 // Icons
 import code from "./icons/code.svg";
@@ -55,6 +58,8 @@ export const IMAGES = {
   agency,
   startup,
   aboutMeHero,
+  mission,
+  vision,
 };
 
 export const GRADIENTS = {
@@ -62,5 +67,6 @@ export const GRADIENTS = {
   serviceCardGradient,
   footerGradient,
   ctaGradientAbove,
-  howItWorksGradient
+  howItWorksGradient,
+  aboutMeGradient,
 };
