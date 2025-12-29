@@ -47,7 +47,7 @@ const WorkExperience = () => {
   ];
   return (
     <div className="py-[100px] relative">
-      <div className="size-[344px] rounded-full bg-primary-10 left-0 top-20 absolute blur-[100px]"></div>
+      <div className="size-[250px] md:size-[344px] rounded-full bg-primary-10 left-0 top-20 absolute blur-[100px]"></div>
       <Container>
         <Heading styledHeading="Work" heading="Experience" />
 

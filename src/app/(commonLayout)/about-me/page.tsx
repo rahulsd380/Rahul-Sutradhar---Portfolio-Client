@@ -13,7 +13,7 @@ const AboutMePage = () => {
       <AboutMeHero />
       <AboutMe />
       <MissionAndVision />
-      {/* <WorkExperience /> */}
+      <WorkExperience />
       {/* <TechnologyToolbox/> */}
       {/* <WhoIHelp /> */}
       {/* <HowItWorks /> */}

@@ -23,7 +23,7 @@ const Heading: React.FC<THeadingProps> = ({
   };
 
   return (
-    <div className={`flex flex-col ${containerClasses[align]}`}>
+    <div className={`flex flex-col relative ${containerClasses[align]}`}>
       {subHeading && (
         <div
           className={`flex items-center gap-2.5 ${
