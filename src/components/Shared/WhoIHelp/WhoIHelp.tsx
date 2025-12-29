@@ -10,8 +10,8 @@ const WhoIHelp = () => {
       <div className="py-7 lg:py-[100px]">
         <Heading
           subHeading="Who I Help"
-          styledHeading="who"
-          heading="i  Work Best With"
+          styledHeading="Who"
+          heading="I Work Best With"
           description="I work with small teams and startups seeking simple tech that delivers real results, not confusing systems."
         />
 

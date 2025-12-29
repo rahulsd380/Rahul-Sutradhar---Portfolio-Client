@@ -1,3 +1,4 @@
+"use client";
 import Container from "@/components/Reusable/Container/Container";
 import Image from "next/image";
 import { GRADIENTS, ICONS, IMAGES } from "../../../../public/assets";
@@ -10,10 +11,11 @@ import {
   FiLinkedin,
   FiInstagram,
   FiGithub,
-  FiMessageCircle, // WhatsApp alternative (outlined)
+  FiMessageCircle,
   FiMail,
 } from "react-icons/fi";
 import { RiRedditLine } from "react-icons/ri";
+import { motion } from 'framer-motion';
 
 const ProfileOverview = () => {
   const socialMediaLinks = [
@@ -73,7 +75,7 @@ const ProfileOverview = () => {
                   className="size-20 rounded-full"
                 />
                 <div className="bg-white border border-neutral-25 rounded-3xl py-1.5 px-2 md:px-3.5 text-neutral-20 flex items-center gap-2 font-Inter text-xs md:text-base w-fit">
-                  <Image src={ICONS.available} alt="" className="size-5" />
+                  <Image src={ICONS.available} alt="" className="size-5 animate-ping" />
                   <p>Taking New Projects</p>
                 </div>
               </div>
@@ -108,126 +110,84 @@ const ProfileOverview = () => {
 
           {/* Right cards */}
           <div className="grid grid-cols-2 md:grid-cols-3 gap-5 w-full lg:w-[50%]">
-            {/* Social Media cards */}
-            {socialMediaLinks.map((item, index) => {
-              const isLast = index === socialMediaLinks.length - 1;
+  {socialMediaLinks.map((item, index) => {
+    const isLast = index === socialMediaLinks.length - 1;
 
-              return (
-                <a
-                  key={item.title}
-                  href={item.link}
-                  className={`bg-neutral-70/70 hover:bg-primary-10 transition duration-300 group h-fit rounded-xl border border-neutral-35/30 p-4 relative overflow-hidden
+    return (
+      <motion.a
+        key={item.title}
+        href={item.link}
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ delay: index * 0.1 }}
+        // THE HOVER EFFECT
+        whileHover={{ 
+          y: -10, 
+          scale: 1.02,
+          transition: { type: "spring", stiffness: 400, damping: 10 } 
+        }}
+        className={`bg-neutral-70/70 hover:bg-primary-10 transition-colors duration-300 group h-fit rounded-xl border border-neutral-35/30 p-4 relative overflow-hidden
           ${isLast ? "col-span-2 md:col-span-3" : ""}`}
-                >
-                  <div className="w-[94px] h-[220px] absolute top-0 right-18 rounded-t-xl">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="167"
-                      height="118"
-                      viewBox="0 0 167 118"
-                      fill="none"
-                    >
-                      <g opacity="0.4" filter="url(#filter0_f_38_86)">
-                        <g filter="url(#filter1_f_38_86)">
-                          <path
-                            d="M248.991 -37.5419C243.083 -102.245 197.959 -46.7251 176.136 -10.8774L174.184 -7.49728L79.1992 96.5256L182.826 8.75874C207.343 20.2847 254.9 27.1609 248.991 -37.5419Z"
-                            fill="#284DF6"
-                          />
-                        </g>
-                        <g filter="url(#filter2_f_38_86)">
-                          <path
-                            d="M248.991 -37.5419C243.083 -102.245 197.959 -46.7251 176.136 -10.8774L174.184 -7.49728L79.1992 96.5256L182.826 8.75874C207.343 20.2847 254.9 27.1609 248.991 -37.5419Z"
-                            fill="#284DF6"
-                          />
-                        </g>
-                      </g>
-                      <defs>
-                        <filter
-                          id="filter0_f_38_86"
-                          x="-0.000778198"
-                          y="-146.552"
-                          width="328.695"
-                          height="322.277"
-                          filterUnits="userSpaceOnUse"
-                          color-interpolation-filters="sRGB"
-                        >
-                          <feFlood
-                            flood-opacity="0"
-                            result="BackgroundImageFix"
-                          />
-                          <feBlend
-                            mode="normal"
-                            in="SourceGraphic"
-                            in2="BackgroundImageFix"
-                            result="shape"
-                          />
-                          <feGaussianBlur
-                            stdDeviation="0"
-                            result="effect1_foregroundBlur_38_86"
-                          />
-                        </filter>
-                        <filter
-                          id="filter1_f_38_86"
-                          x="63.3992"
-                          y="-83.1516"
-                          width="201.895"
-                          height="195.477"
-                          filterUnits="userSpaceOnUse"
-                          color-interpolation-filters="sRGB"
-                        >
-                          <feFlood
-                            flood-opacity="0"
-                            result="BackgroundImageFix"
-                          />
-                          <feBlend
-                            mode="normal"
-                            in="SourceGraphic"
-                            in2="BackgroundImageFix"
-                            result="shape"
-                          />
-                          <feGaussianBlur
-                            stdDeviation="7.9"
-                            result="effect1_foregroundBlur_38_86"
-                          />
-                        </filter>
-                        <filter
-                          id="filter2_f_38_86"
-                          x="49.1992"
-                          y="-97.3516"
-                          width="230.295"
-                          height="223.877"
-                          filterUnits="userSpaceOnUse"
-                          color-interpolation-filters="sRGB"
-                        >
-                          <feFlood
-                            flood-opacity="0"
-                            result="BackgroundImageFix"
-                          />
-                          <feBlend
-                            mode="normal"
-                            in="SourceGraphic"
-                            in2="BackgroundImageFix"
-                            result="shape"
-                          />
-                          <feGaussianBlur
-                            stdDeviation="15"
-                            result="effect1_foregroundBlur_38_86"
-                          />
-                        </filter>
-                      </defs>
-                    </svg>
-                  </div>
-                  <div className="bg-neutral-75 group-hover:bg-white rounded-xl p-2.5 flex items-center justify-center text-white group-hover:text-primary-10 text-2xl w-fit transition duration-300">
-                    {item?.icon}
-                  </div>
-                  <div className="font-Uncut-Sans text-lg text-white font-medium flex items-center justify-between mt-6">
-                    <h2>{item?.title}</h2>
-                    <LuSquareArrowOutUpRight />
-                  </div>
-                </a>
-              );
-            })}
-          </div>
+      >
+        {/* Animated Background SVG */}
+        <motion.div 
+          variants={{
+            hover: { scale: 1.2, opacity: 0.8 }
+          }}
+          transition={{ duration: 0.5 }}
+          className="w-[94px] h-[220px] absolute top-0 right-18 rounded-t-xl pointer-events-none"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="167"
+            height="118"
+            viewBox="0 0 167 118"
+            fill="none"
+          >
+            <g opacity="0.4" filter="url(#filter0_f_38_86)">
+              <g filter="url(#filter1_f_38_86)">
+                <path
+                  d="M248.991 -37.5419C243.083 -102.245 197.959 -46.7251 176.136 -10.8774L174.184 -7.49728L79.1992 96.5256L182.826 8.75874C207.343 20.2847 254.9 27.1609 248.991 -37.5419Z"
+                  fill="#284DF6"
+                />
+              </g>
+            </g>
+            <defs>
+              <filter id="filter0_f_38_86" x="-0.000778198" y="-146.552" width="328.695" height="322.277" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <feGaussianBlur stdDeviation="15" result="blur" />
+              </filter>
+            </defs>
+          </svg>
+        </motion.div>
+
+        {/* Animated Main Icon Box */}
+        <motion.div 
+          whileHover={{ rotate: -10, scale: 1.1 }}
+          className="bg-neutral-75 group-hover:bg-white rounded-xl p-2.5 flex items-center justify-center text-white group-hover:text-primary-10 text-2xl w-fit transition-colors duration-300 relative z-10"
+        >
+          {item?.icon}
+        </motion.div>
+
+        {/* Text and External Link Icon */}
+        <div className="font-Uncut-Sans text-lg text-white font-medium flex items-center justify-between mt-6 relative z-10">
+          <h2>{item?.title}</h2>
+          
+          {/* Animated Arrow */}
+          <motion.div
+            variants={{
+              initial: { x: 0, y: 0 },
+              hover: { x: 3, y: -3 }
+            }}
+            transition={{ type: "spring", stiffness: 400 }}
+          >
+            <LuSquareArrowOutUpRight className="group-hover:text-white" />
+          </motion.div>
+        </div>
+      </motion.a>
+    );
+  })}
+</div>
         </div>
       </Container>
     </div>

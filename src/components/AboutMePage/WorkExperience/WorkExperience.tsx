@@ -1,7 +1,9 @@
+"use client";
 import Container from "@/components/Reusable/Container/Container";
 import Heading from "@/components/Reusable/Heading/Heading";
 import ExperienceCard from "./ExperienceCard";
 import { ReactNode } from "react";
+import { motion } from 'framer-motion';
 
 export type TJobDetail = {
   label: string;
@@ -46,10 +48,26 @@ const WorkExperience = () => {
     },
   ];
   return (
-    <div className="py-[100px] relative">
-      <div className="size-[250px] md:size-[344px] rounded-full bg-primary-10 left-0 top-20 absolute blur-[100px]"></div>
+    <div className="py-[100px] relative overflow-hidden">
+      {/* Pulsing Background Glow */}
+      <motion.div 
+        animate={{ 
+          scale: [1, 1.2, 1],
+          opacity: [0.3, 0.6, 0.3]
+        }}
+        transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
+        className="size-[250px] md:size-[344px] rounded-full bg-primary-10 left-0 top-20 absolute blur-[100px] -z-10"
+      />
+
       <Container>
-        <Heading styledHeading="Work" heading="Experience" />
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+        >
+          <Heading styledHeading="Work" heading="Experience" />
+        </motion.div>
 
         <div className="flex flex-col gap-10 relative mt-13 lg:mt-[70px]">
           {experiences?.map((experience) => (

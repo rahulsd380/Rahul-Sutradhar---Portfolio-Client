@@ -23,7 +23,7 @@ const ContactUsForm = () => {
     console.log(data);
   };
   return (
-    <div className="bg-white p-5 rounded-xl w-full lg:w-1/2">
+    <div className="bg-white p-5 rounded-xl">
       <h2 className="text-xl md:text-[32px] font-semibold font-Uncut-Sans leading-normal text-primary-10 text-center">
         Let's Connect
       </h2>
