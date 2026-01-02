@@ -22,32 +22,32 @@ const ProfileOverview = () => {
     {
       icon: <FiLinkedin />,
       title: "LinkedIn",
-      link: "https://www.linkedin.com/in/rahulsutradhar/",
+      link: "https://www.linkedin.com/in/rahul-sutradhar380/",
     },
     {
       icon: <FiFacebook />,
       title: "Facebook",
-      link: "https://www.facebook.com/",
+      link: "https://www.facebook.com/profile.php?id=61581136832665",
     },
     {
       icon: <FiInstagram />,
       title: "Instagram",
-      link: "https://www.instagram.com/",
+      link: "https://www.instagram.com/rahul_sutradhar_380/",
     },
     {
       icon: <FiGithub />,
       title: "GitHub",
-      link: "https://github.com/",
+      link: "https://github.com/rahulsd380",
     },
     {
       icon: <FiMessageCircle />,
       title: "WhatsApp",
-      link: "https://wa.me/",
+      link: "https://wa.me/+8801572915890",
     },
     {
       icon: <RiRedditLine />,
       title: "Reddit",
-      link: "https://www.reddit.com/",
+      link: "https://www.reddit.com/user/External_Concert_504/",
     },
     {
       icon: <FiMail />,

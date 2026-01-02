@@ -43,8 +43,8 @@ const Counter = ({ value }: { value: string }) => {
 
 const ContactMe = () => {
   const stats = [
-    { value: "600+", title: "Projects Delivered" },
-    { value: "20+", title: "Industries Served" },
+    { value: "55+", title: "Projects Delivered" },
+    { value: "4+", title: "Industries Served" },
     { value: "4.8", title: "Average Rating" },
   ];
 
@@ -89,9 +89,9 @@ const ContactMe = () => {
           <motion.div variants={itemVariants}>
             <Heading
               subHeading="Let's Connect"
-              styledHeading="Let’s Collaborate"
-              heading="and Begin the work"
-              description="Direct and easy to understand, with a focus on practical impact."
+              styledHeading="Start With a Clear Conversation"
+              heading=" — Not a Sales Pitch"
+              description="Tell me about your project. I’ll review it personally and let you know what’s feasible, what’s not, and what actually makes sense."
               align="left"
             />
           </motion.div>
@@ -135,9 +135,7 @@ const ContactMe = () => {
               </div>
 
               <p className="text-sm text-neutral-35 font-Inter mt-6 leading-relaxed">
-                I’m Rahul, a developer who blends technology with business
-                thinking. I help brands build systems that grow revenue and
-                simplify work.
+               I’m Rahul — founder-led developer. I work directly with business owners to design and build systems that are fast, scalable, and maintainable long-term. No middlemen. No overengineering.
               </p>
             </motion.div>
 
@@ -147,7 +145,7 @@ const ContactMe = () => {
               className="p-6 bg-primary-35 rounded-2xl flex flex-col md:flex-row gap-4 items-center justify-between border border-white/5"
             >
               <h2 className="font-Uncut-Sans text-xl md:text-2xl font-semibold text-white">
-                Prefer to book a call?
+                Want faster clarity? Book a 30-minute feasibility call.
               </h2>
               <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
                 <Button

@@ -79,22 +79,18 @@ const AboutMe = () => {
           <motion.div variants={textVariants} className="w-full lg:w-1/2">
             <Heading
               subHeading="About me"
-              styledHeading="Building digital"
-              heading="solutions with purpose"
+              styledHeading="I Build Web Systems "
+              heading="That Solve Real Business Problem"
+              description="Clear architecture, realistic planning, and systems designed to scale without rewrites."
               align="left"
             />
             <motion.p
               variants={textVariants}
               className="text-sm md:text-lg lg:text-sm xl:text-lg text-white font-Inter mt-8 leading-relaxed"
             >
-              I’m Rahul a developer who loves solving real business problems
-              with smart software. I build digital systems that make work
-              simple, help teams grow faster, and turn ideas into results.
+              I’m Rahul — a web developer and technical consultant who works with founders, startups, and growing businesses that need systems they can rely on long after launch.
               <br />
               <br />
-              My focus isn’t just design or code—it’s impact. Every project I
-              take on aims to save time, boost revenue, and keep your business
-              running smoother.
             </motion.p>
           </motion.div>
 

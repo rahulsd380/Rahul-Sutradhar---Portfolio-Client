@@ -2,7 +2,6 @@ import {
   FaLinkedinIn,
   FaFacebookF,
   FaInstagram,
-  FaTwitter,
   FaRedditAlien,
 } from "react-icons/fa";
 import { ICONS } from "../../public/assets";
@@ -10,39 +9,57 @@ import { ICONS } from "../../public/assets";
 export const socialMedia = [
   {
     name: "LinkedIn",
-    href: "https://www.linkedin.com",
+    href: "https://www.linkedin.com/in/rahul-sutradhar380/",
     icon: FaLinkedinIn,
   },
   {
     name: "Facebook",
-    href: "https://www.facebook.com",
+    href: "https://www.facebook.com/profile.php?id=61581136832665",
     icon: FaFacebookF,
   },
   {
     name: "Instagram",
-    href: "https://www.instagram.com",
+    href: "https://www.instagram.com/rahul_sutradhar_380/",
     icon: FaInstagram,
   },
-  {
-    name: "Twitter",
-    href: "https://twitter.com",
-    icon: FaTwitter,
-  },
+  // {
+  //   name: "Twitter",
+  //   href: "https://twitter.com",
+  //   icon: FaTwitter,
+  // },
   {
     name: "Reddit",
-    href: "https://www.reddit.com",
+    href: "https://www.reddit.com/user/External_Concert_504/",
     icon: FaRedditAlien,
   },
 ];
 
-export const navinks = [
-  { label: "Home", href: "/" },
-  { label: "About", href: "/about" },
-  { label: "Services", href: "/services" },
-  { label: "Projects", href: "/projects" },
-  { label: "Blog", href: "/blog" },
-  { label: "Contact", href: "/contact" },
-];
+export const navlinks = [
+    {
+      label: "Home",
+      path: "/",
+    },
+    {
+      label: "About Me",
+      path: "/about-me",
+    },
+    // {
+    //   label: "Portfolio",
+    //   path: "/portfolio",
+    // },
+    {
+      label: "Services",
+      path: "/services",
+    },
+    // {
+    //   label: "Blog",
+    //   path: "/blog",
+    // },
+    {
+      label: "Contact",
+      path: "/contact-me",
+    },
+  ];
 
 export const services = [
   {

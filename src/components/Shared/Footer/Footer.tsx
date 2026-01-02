@@ -7,7 +7,7 @@ import { GRADIENTS, ICONS } from "../../../../public/assets";
 import { motion } from "framer-motion";
 import {
   contactInfo,
-  navinks,
+  navlinks,
   services,
   socialMedia,
 } from "@/data/footer.data";
@@ -19,14 +19,14 @@ const Footer = () => {
   return (
     <div>
       <Container>
-        <div className="flex flex-col lg:flex-row items-center justify-between gap-5 lg:gap-0 border-b border-neutral-30 pb-11">
+        <div className="flex flex-col h0 lg:flex-row items-center justify-between gap-5 lg:gap-0 border-b border-neutral-30 pb-11">
           <div className="flex w-full lg:w-fit overflow-y-auto items-center">
-            {navinks?.map((link) => (
+            {navlinks?.map((link) => (
               <Link
-                key={link.href}
-                href={link.href}
+                key={link.path}
+                href={link.path}
                 className={`text-white font-Figtree font-medium transition-colors duration-300 hover:bg-primary-10 px-6 py-2 md:py-2.5 rounded-3xl ${
-                  pathname === link.href
+                  pathname === link.path
                     ? "text-white bg-primary-10"
                     : "text-neutral-35"
                 }`}

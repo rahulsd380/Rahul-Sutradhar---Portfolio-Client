@@ -16,9 +16,9 @@ const ProjectCard = () => {
         <div className="py-1.5 md:py-2.5 px-4 rounded-3xl border border-neutral-30 bg-neutral-30 shadow-stat-card text-white font-Inter text-[10px] md:text-xs mt-4 md:mt-6 w-fit">
           e-Commerce Website
         </div>
-        <h2 className="text-white text-xl font-bold font-Uncut-Sans mt-6">
+        <h3 className="text-white text-xl font-bold font-Uncut-Sans mt-6">
           BrightRoof — Service Website
-        </h2>
+        </h3>
         <p className="text-xs md:text-sm text-neutral-35 font-Inter max-w-[698px] mt-3">
           A fast, conversion-focused website for a UK plumbing brand. Designed
           for all screens.

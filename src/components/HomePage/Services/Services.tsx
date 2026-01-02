@@ -11,61 +11,49 @@ const Services = () => {
   const services = [
     {
       heading: "Web Development",
-      subHeading: "Websites That Work, Not Just Look Good",
+      subHeading: "Conversion-focused, performance-ready websites designed to scale — not redesign.",
       description:
-        "I design and develop modern websites that load fast, convert visitors, and reflect your brand’s story. Whether it’s a portfolio or a full business site, I focus on performance and growth.",
+        "I build fast, SEO-ready websites and internal web systems that are clear to maintain, easy to extend, and aligned with real business goals — not just visual polish.",
       pointers: [
-        "Responsive Design",
-        "SEO Optimization",
-        "Client Training",
-        "CMS Integration",
-        "Full Website Design",
-        "E-commerce Setup",
+        "Built for real traffic, not demos",
+        "SEO-ready structure from day one",
+        "Designed to evolve without rewrites",
       ],
       image: IMAGES.webDevelopmentService,
     },
     {
       heading: "App Development",
-      subHeading: "Apps That Simplify Daily Work and Drive Growth",
+      subHeading: "Apps built for real users, real workflows, and long-term stability.",
       description:
-        "I build web and mobile apps that solve real problems—from booking and tracking to managing teams and payments. Each app is designed for smooth performance and scalability.",
+        "From internal tools to customer-facing apps, I design and ship applications that stay reliable as usage grows and requirements change.",
       pointers: [
-        "Cross-Platform",
-        "iOS & Android",
-        "Cloud Sync",
-        "Secure Login System",
-        "Admin Dashboard",
-        "Real-Time Database",
+        "Clear system architecture before code",
+        "Scalable APIs and data models",
+        "Production-ready, not MVP shortcuts",
       ],
       image: IMAGES.appDevelopmentService,
     },
     {
       heading: "SEO & Digital Visibility",
-      subHeading: "Get Found Faster, Rank Higher, and Stay Visible",
+      subHeading: "SEO built into the system — not added later as a patch.",
       description:
-        "I help businesses grow organically through SEO and digital strategy. From keyword planning to content structure, everything is designed to boost search rankings and brand trust.",
+        "I focus on technical SEO, site structure, and performance foundations that help your website rank, convert, and stay competitive over time.",
       pointers: [
-        "Keyword Optimization",
-        "Technical SEO",
-        "Content Strategy",
-        "Google Console Setup",
-        "Analytics & Reporting",
-        "Local SEO Setup",
+        "Clean architecture & crawlability",
+        "Performance-first approach",
+        "Conversion-aware SEO strategy",
       ],
       image: IMAGES.seoService,
     },
     {
-      heading: "AI Integration",
-      subHeading: "Smarter Systems Through Automation and AI",
+      heading: "AI & Automation",
+      subHeading: "Reduce manual work with practical AI — not gimmicks.",
       description:
-        "I integrate AI-powered solutions that streamline operations, automate workflows, and improve decision-making—helping your business scale faster with intelligent systems.",
+        "I integrate AI and automation into existing systems to streamline operations, improve decision-making, and remove repetitive tasks.",
       pointers: [
-        "ChatGPT Integration",
-        "Workflow Automation",
-        "CRM Connection",
-        "Email & WhatsApp Bots",
-        "Data Processing",
-        "Dashboard Reporting",
+        "Workflow automation",
+        "AI-assisted dashboards & tools",
+        "Integrations that fit your system",
       ],
       image: IMAGES.aiIntegrationService,
     },
@@ -82,9 +70,10 @@ const Services = () => {
         >
           <Heading
             subHeading="Services"
-            styledHeading="Smart Digital"
-            heading="Solutions for Growing Businesses"
-            description="I help brands turn ideas into fast, reliable, and growth-focused systems from websites to full automation platforms."
+            styledHeading="Practical Web & Software Solutions"
+            heading="for Growing Businesses"
+            description="I don’t offer isolated services. I design and build systems that help businesses launch faster, scale reliably, and avoid expensive rebuilds later.
+"
           />
         </motion.div>
 
@@ -98,11 +87,13 @@ const Services = () => {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
-          className="flex items-center justify-center mt-10"
+          className="flex  flex-col items-center justify-center gap-4 mt-10"
         >
           <Link href="/services">
             <Button variant="secondary" label="See All Service" />
           </Link>
+          <p className="text-neutral-50">Most projects use more than one of these — because real systems aren’t built in silos.
+</p>
         </motion.div>
       </div>
     </Container>

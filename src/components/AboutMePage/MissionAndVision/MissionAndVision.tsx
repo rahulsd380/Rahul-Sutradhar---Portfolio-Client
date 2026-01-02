@@ -6,6 +6,7 @@ import Image from "next/image";
 import { IMAGES } from "../../../../public/assets";
 import Button from "@/components/Reusable/Button/Button";
 import Heading from "@/components/Reusable/Heading/Heading";
+import Link from "next/link";
 
 // --- Counter Animation ---
 const Counter = ({ value }: { value: string }) => {
@@ -39,9 +40,9 @@ const Counter = ({ value }: { value: string }) => {
 
 const MissionAndVision = () => {
   const stats = [
-    { value: "100+", title: "Projects Completed" },
-    { value: "20+", title: "Industries Served" },
-    { value: "600+", title: "Happy client" },
+    { value: "55+", title: "Projects Completed" },
+    { value: "5+", title: "Industries Served" },
+    { value: "38+", title: "Clients Served" },
     { value: "3+", title: "Years of Experience" },
   ];
 
@@ -103,20 +104,23 @@ const MissionAndVision = () => {
             {/* Text Center */}
             <motion.div variants={fadeInUp} className="flex flex-col gap-6 max-w-[400px] lg:max-w-[500px] 2xl:max-w-[600px]">
               <div>
-                <h2 className="text-lg text-white font-bold">Mission:</h2>
+                <h3 className="text-lg text-white font-bold">My Focus:</h3>
                 <p className="text-sm md:text-lg lg:text-sm xl:text-lg text-neutral-35 mt-3 leading-relaxed">
-                  To empower businesses through digital systems that drive
-                  measurable growth by combining strategy, design, and
-                  automation into one seamless experience.
+                 I help businesses avoid expensive rewrites, slow systems, and unclear technical decisions by designing software that works in the real world — not just on launch day.
                 </p>
               </div>
 
               <div>
-                <h2 className="text-lg text-white font-bold">Vision:</h2>
+                <h2 className="text-lg text-white font-bold">How I Measure Success:</h2>
                 <p className="text-sm md:text-lg lg:text-sm xl:text-lg text-neutral-35 mt-3 leading-relaxed">
-                  To build a world where digital transformation feels human—where
-                  every tool, website, and workflow helps people work
-                  smarter, connect better, and achieve more.
+                 A project is successful when:
+                 <ul className="list-disc list-inside mt-2 space-y-1">
+                  <li>performance stays stable as traffic grows</li>
+                  <li>the system supports business goals, not fights them</li>
+                  <li>changes don’t require starting over</li>
+                 </ul>
+
+
                 </p>
               </div>
             </motion.div>
@@ -137,7 +141,8 @@ const MissionAndVision = () => {
             viewport={{ once: true }}
             className="flex justify-center mt-10"
           >
-            <Button label="Contact Me" />
+            <Link href="/contact-me">   <Button label="Contact Me" /></Link>
+         
           </motion.div>
 
           {/* Stats Grid */}

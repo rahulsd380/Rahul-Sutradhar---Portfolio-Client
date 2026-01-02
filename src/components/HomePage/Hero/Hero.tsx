@@ -9,7 +9,7 @@ import Button from "@/components/Reusable/Button/Button";
 import { motion, Variants } from "framer-motion";
 
 const Hero = () => {
-  const containerVariants:Variants = {
+  const containerVariants: Variants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
@@ -20,7 +20,7 @@ const Hero = () => {
     },
   };
 
-  const fadeInUp:Variants = {
+  const fadeInUp: Variants = {
     hidden: { opacity: 0, y: 30 },
     visible: {
       opacity: 1,
@@ -29,7 +29,7 @@ const Hero = () => {
     },
   };
 
-  const imageVariants:Variants = {
+  const imageVariants: Variants = {
     hidden: { opacity: 0, scale: 0.9 },
     visible: {
       opacity: 1,
@@ -38,7 +38,7 @@ const Hero = () => {
     },
   };
 
-  const floatingCardRight:Variants = {
+  const floatingCardRight: Variants = {
     hidden: { opacity: 0, x: 50 },
     visible: {
       opacity: 1,
@@ -47,7 +47,7 @@ const Hero = () => {
     },
   };
 
-  const floatingCardLeft:Variants = {
+  const floatingCardLeft: Variants = {
     hidden: { opacity: 0, x: -50 },
     visible: {
       opacity: 1,
@@ -63,7 +63,7 @@ const Hero = () => {
           variants={containerVariants}
           initial="hidden"
           animate="visible"
-          className="relative z-10 flex flex-col lg:flex-row items-center justify-between gap-12 md:gap-14 lg:gap-0 mt-20 md:mt-16 lg:mt-40"
+          className="relative z-10 flex flex-col lg:flex-row items-center justify-between gap-12 md:gap-14 lg:gap-0 mt-20 md:mt-16"
         >
           {/* Left side contents */}
           <div className="max-w-full lg:max-w-[500px] xl:max-w-[700px]">
@@ -72,34 +72,32 @@ const Hero = () => {
               className="bg-white border border-neutral-25 rounded-3xl py-1.5 px-3.5 text-neutral-20 flex items-center gap-2 font-Inter text-sm md:text-base w-fit"
             >
               <Image src={ICONS.available} alt="" className="size-5" />
-              <p>Available for work</p>
+              <p>Available for Selected Projects</p>
             </motion.div>
 
             <motion.h1
               variants={fadeInUp}
               className="text-white font-bold text-[32px] md:text-[48px] lg:text-[40px] xl:text-[60px] leading-10 md:leading-14 lg:leading-12 xl:leading-17 2xl:leading-20 mt-6 font-Uncut-Sans"
             >
-              I Build{" "}
+             Web & App Development{" "}
               <span className="font-Instrument-Serif font-normal italic">
-                Digital Solutions
+               for Businesses That Need Systems 
               </span>{" "}
-              That Help Businesses Grow Faster
+             Not Rewrites
             </motion.h1>
 
             <motion.p
               variants={fadeInUp}
               className="text-sm md:text-lg lg:text-sm xl:text-lg text-white font-Inter mt-6"
             >
-              From custom websites to full automation systems, I design tools
-              that save time, increase revenue, and make business easier to run.
+              I help startups, SaaS teams, and growing businesses design and build web systems that don’t need rewriting after launch.
             </motion.p>
-
-            <motion.div
+           <motion.div
               variants={fadeInUp}
               className="flex items-center gap-3 md:gap-6 mt-10"
             >
               <Link href={"/contact-me"}>
-                <Button label="Start Your Project" />
+                <Button label="Request a Project Review " />
               </Link>
               <Link href={"/portfolio"}>
                 <Button variant="secondary" label="View Portfolio" />

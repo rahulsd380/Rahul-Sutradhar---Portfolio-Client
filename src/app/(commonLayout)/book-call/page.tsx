@@ -1,6 +1,14 @@
 import ProfileOverview from "@/components/AboutMePage/ProfileOverview/ProfileOverview";
 import BookACall from "@/components/BookACallPage/BookACall/BookACall";
 import HeroSection from "@/components/Reusable/HeroSection/HeroSection";
+export const metadata = {
+  title: "Book a Call with Rahul Sutradhar",
+  description:
+    "Schedule a consultation to discuss your project, feasibility, timelines, and technical approach.",
+  alternates: {
+    canonical: "https://rahulsutradhar.com/book-call",
+  },
+};
 
 const BookACallPage = () => {
   return (

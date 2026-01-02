@@ -100,7 +100,7 @@ const ServiceCard = ({ service }: TServiceCardProps) => {
             {service.description}
           </motion.p>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4 mt-5 md:mt-8 max-w-[400px]">
+          <div className="grid grid-cols-1 gap-x-8 gap-y-4 mt-5 md:mt-8 max-w-[400px]">
             {service?.pointers?.map((item: string) => (
               <motion.p
                 key={item}

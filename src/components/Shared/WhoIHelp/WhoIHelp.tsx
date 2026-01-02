@@ -9,10 +9,10 @@ const WhoIHelp = () => {
     <Container>
       <div className="py-7 lg:py-[100px]">
         <Heading
-          subHeading="Who I Help"
-          styledHeading="Who"
-          heading="I Work Best With"
-          description="I work with small teams and startups seeking simple tech that delivers real results, not confusing systems."
+          subHeading="Who I Work Best With"
+          styledHeading="Teams That Need Systems"
+          heading="— Not Just Another Website"
+          description="I work with founders and teams who care about clarity, scalability, and real outcomes — not rushed builds or surface-level fixes."
         />
 
         <div className="flex flex-col md:flex-row gap-3 mt-13 lg:mt-[70px]">
@@ -27,13 +27,15 @@ const WhoIHelp = () => {
                 alt=""
                 className="absolute top-0 bottom-0 right-0 left-0 w-full"
               />
-              <div className="relative">
-                <h2 className="font-Uncut-Sans text-2xl md:text-[32px] font-semibold text-white leading-9">
+              <div className="relative flex flex-col h-full">
+                <h3 className="font-Uncut-Sans text-2xl md:text-[32px] font-semibold text-white leading-9">
                   Local Businesses
-                </h2>
+                </h3>
                 <p className="font-Inter text-sm md:text-lg text-neutral-35 leading-6 mt-2">
-                  Turn your website into a lead machine.
+                If your website exists but doesn’t consistently bring inquiries, conversions, or clarity — the problem isn’t design.
+It’s structure, messaging, and performance.
                 </p>
+                <div className="font-Inter text-sm md:text-lg text-neutral-35 leading-6 mt-2">Best for service-based local businesses ready to invest in long-term results.</div>
               </div>
               <Image src={IMAGES.linnerVector} alt="" className="" />
             </div>
@@ -42,11 +44,11 @@ const WhoIHelp = () => {
             <div className="bg-neutral-55 h-[228px] rounded-[20px] p-6 relative overflow-hidden">
               <div className="size-[322px] bg-gradient-step-card rounded-[322px] blur-[48px] absolute -bottom-60 left-[168px]"></div>
               <div className="flex flex-col items-center justify-center text-center h-full">
-                <h2 className="font-Uncut-Sans text-[32px] md:text-[48px] font-semibold text-white leading-9">
-                  Local Businesses
-                </h2>
+                <h3 className="font-Uncut-Sans text-[32px] md:text-[48px] font-semibold text-white leading-9">
+                 3+ 
+                </h3>
                 <p className="font-Inter text-sm md:text-lgtext-lg text-neutral-35 leading-6 mt-4">
-                  Turn your website into a lead machine.
+                  Years Shipping Production Software
                 </p>
               </div>
             </div>
@@ -61,9 +63,9 @@ const WhoIHelp = () => {
                 />
                 <div className="w-[181px] h-[345px] rotate-135 bg-gradient-step-card rounded-[345px] blur-[48px] absolute bottom-[-110px] left-[-130px]"></div>
                 <div className="flex flex-col items-center justify-center text-center h-full gap-6 relative">
-                  <h2 className="font-Uncut-Sans text-base md:text-2xl font-semibold text-white leading-6 md:leading-9">
+                  <h3 className="font-Uncut-Sans text-base md:text-2xl font-semibold text-white leading-6 md:leading-9">
                     120+ Projects Delivered
-                  </h2>
+                  </h3>
                   <Image
                     src={IMAGES.projectDelivered}
                     alt=""
@@ -83,11 +85,11 @@ const WhoIHelp = () => {
                   </div>
 
                   <div>
-                    <h2 className="font-Uncut-Sans text-[32px] md:text-[58px] font-semibold text-white">
-                      100+
-                    </h2>
+                    <h3 className="font-Uncut-Sans text-[32px] md:text-[58px] font-semibold text-white">
+                      38+
+                    </h3>
                     <h3 className="font-Uncut-Sans text-lg md:text-[32px] text-white leading-5 md:leading-0">
-                      Happy clients
+                      Clients Served
                     </h3>
                   </div>
                 </div>
@@ -107,12 +109,11 @@ const WhoIHelp = () => {
                 className="absolute top-0 bottom-0 right-0 left-0 w-full h-full"
               />
               <div className="relative p-6">
-                <h2 className="font-Uncut-Sans text-2xl md:text-[32px] font-semibold text-white leading-9">
+                <h3 className="font-Uncut-Sans text-2xl md:text-[32px] font-semibold text-white leading-9">
                   Startups
-                </h2>
+                </h3>
                 <p className="font-Inter text-sm md:text-lg text-neutral-35 leading-6 mt-2">
-                  Launch your first product fast with tech that scales as you
-                  grow.
+                 Launch your first product with a system designed to scale — without rebuilding everything after your first traction spike.
                 </p>
               </div>
               <Image src={IMAGES.startup} alt="" className="relative" />
@@ -127,11 +128,11 @@ const WhoIHelp = () => {
                 className="absolute top-0 bottom-0 right-0 left-0 w-full h-full"
               />
               <div className="relative p-6">
-                <h2 className="font-Uncut-Sans text-2xl md:text-[32px] font-semibold text-white leading-9">
+                <h3 className="font-Uncut-Sans text-2xl md:text-[32px] font-semibold text-white leading-9">
                   Agencies
-                </h2>
+                </h3>
                 <p className="font-Inter text-sm md:text-lg text-neutral-35 leading-6 mt-2">
-                  Automate client onboarding and sacve hours each week.
+                 Partner with a technical team that helps you deliver stable systems while you focus on growth and clients.
                 </p>
               </div>
               <Image src={IMAGES.agency} alt="" className="relative" />

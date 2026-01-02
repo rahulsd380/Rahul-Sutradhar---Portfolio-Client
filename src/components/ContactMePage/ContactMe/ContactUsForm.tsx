@@ -88,7 +88,7 @@ const ContactUsForm = () => {
         />
       </form>
       <p className="mt-6 text-neutral-15 font-Inter text-center">
-        (I will reach out to you within 6 hours)
+        (You’ll hear back within 1 business day.)
       </p>
     </div>
   );

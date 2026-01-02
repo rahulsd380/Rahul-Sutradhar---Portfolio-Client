@@ -11,25 +11,25 @@ const HowItWorks = () => {
       id: "01.",
       title: "Discovery & Strategy",
       description:
-        "We start with a short call to understand your goals, audience, and what's slowing growth. Together, we map out what actually moves.",
+        "We dig into your business goals, users, constraints, and technical risks to define what should be built — and just as importantly, what shouldn’t.",
     },
     {
       id: "02.",
-      title: "Plan & Prototype",
+      title: "Planning & System Design",
       description:
-        "You'll get a clear roadmap and a quick prototype so you can see the direction early. This helps make smart decisions before we start building.",
+        "Architecture, data flow, integrations, and future expansion are planned upfront so your product doesn’t collapse when traffic, features, or priorities change.",
     },
     {
       id: "03.",
-      title: "Design & Build",
+      title: "Design & Development",
       description:
-        "Clean design meets reliable code built for performance, SEO, and easy updates. You'll see real progress through live previews every step.",
+        "You get fast-loading, SEO-ready, and maintainable systems — built with performance, clarity, and real usage in mind. Progress is visible through regular previews",
     },
     {
       id: "04.",
-      title: "Review & Launch",
+      title: "Review, Launch & Stability Checks",
       description:
-        "Once it's ready, we test everything together and go live. I handle all the tech setup so you can focus on running your business.",
+        "Before going live, we test performance, edge cases, and handover clarity. I handle the technical setup so you can focus on running the business.",
     },
   ];
 
@@ -101,9 +101,10 @@ const HowItWorks = () => {
           <motion.div variants={leftSideVariants} className="w-full lg:w-1/2">
             <Heading
               subHeading="How It Work"
-              styledHeading="Building digital"
-              heading="solutions with purpose"
+              styledHeading="Build Systems "
+              heading="That Stay Fast, Stable, and Scalable After Launch"
               align="left"
+              description="A clear, proven development process designed to prevent rewrites, performance issues, and costly surprises as your product grows."
             />
             <motion.div
               animate={{ y: [0, -15, 0] }}
