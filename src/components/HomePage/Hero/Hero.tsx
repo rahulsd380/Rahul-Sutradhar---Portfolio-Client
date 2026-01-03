@@ -63,7 +63,7 @@ const Hero = () => {
           variants={containerVariants}
           initial="hidden"
           animate="visible"
-          className="relative z-10 flex flex-col lg:flex-row items-center justify-between gap-12 md:gap-14 lg:gap-0 mt-20 md:mt-16"
+          className="relative z-10 flex flex-col lg:flex-row items-center justify-between gap-12 md:gap-14 lg:gap-0 mt-20 md:mt-16 h-full"
         >
           {/* Left side contents */}
           <div className="max-w-full lg:max-w-[500px] xl:max-w-[700px]">
@@ -81,9 +81,9 @@ const Hero = () => {
             >
              Web & App Development{" "}
               <span className="font-Instrument-Serif font-normal italic">
-               for Businesses That Need Systems 
+               for Businesses That Need 
               </span>{" "}
-             Not Rewrites
+             Smart Systems
             </motion.h1>
 
             <motion.p
@@ -162,14 +162,14 @@ const Hero = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1.5 }}
-        className="absolute top-0 left-0 w-full h-screen z-0"
+        className="absolute top-0 left-0 w-full h-[800px] z-0"
       >
         <Image
           src={IMAGES.heroBg}
           alt=""
           fill
           priority
-          className="object-cover"
+          className="object-cover h-full"
         />
       </motion.div>
     </div>

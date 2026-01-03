@@ -24,10 +24,10 @@ const Button: React.FC<ButtonProps> = ({
   showIcon = true,
   href,
   className,
-  icon = <RxArrowTopRight className="text-lg md:text-xl font-extrabold" />
+  icon = <RxArrowTopRight className="text-lg md:text-xl font-extrabold font-Figtree" />
 }) => {
   const baseClasses =
-    "rounded-lg shadow-button px-3 md:px-7 py-2.5 font-semibold font-Inter flex items-center gap-2 w-fit transition-all duration-200 cursor-pointer disabled:cursor-not-allowed disabled:opacity-50 hover:scale-105 text-xs md:text-base";
+    "rounded-lg shadow-button px-3 md:px-7 py-2.5 font-semibold font-Inter flex items-center gap-2 w-fit transition-all duration-200 cursor-pointer disabled:cursor-not-allowed disabled:opacity-50 hover:scale-105 text-xs md:text-sm";
 
   const variantClasses =
     variant === "primary"

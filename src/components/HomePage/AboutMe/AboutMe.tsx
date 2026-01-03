@@ -73,11 +73,11 @@ const AboutMe = () => {
         className="py-[100px] flex flex-col lg:flex-row gap-9 mt-10 lg:mt-28"
       >
         {/* Left Side: Heading */}
-        <motion.div variants={itemVariants} className="w-full lg:w-[35%]">
+        <motion.div variants={itemVariants} className="w-full lg:w-[35%] lg:sticky lg:top-10 self-start">
           <Heading
             subHeading="How I Build Systems That Last"
             styledHeading="Web Systems Built"
-            heading="to Scale Without Rewrites"
+            heading="to Scale"
             align="left"
           />
         </motion.div>
@@ -101,12 +101,11 @@ const AboutMe = () => {
           {/* Paragraph Text */}
           <motion.p
             variants={itemVariants}
-            className="text-sm md:text-lg lg:text-sm xl:text-lg text-white font-Inter"
+            className="text-sm md:text-base text-neutral-35 font-Inter"
           >
-           Most web systems don’t fail at launch.
+            Most web systems don’t fail at launch.
             <br />
-            They fail months later — when traffic grows, features expand, or
-            priorities change.
+            They fail months later — when <span className="text-white capitalize">traffic grows,</span> <span className="text-white capitalize">features expand,</span> or <span className="text-white capitalize">priorities change.</span>
             <br />
             <br />
             That’s when performance drops, changes get expensive, and teams
@@ -114,49 +113,50 @@ const AboutMe = () => {
             <br />
             My role is to prevent that by designing systems that are clear,
             realistic, and resilient from day one.
-            <br/><br/>I design and ship production-ready web systems that:
-          <ul className="space-y-4 ml-3">
-  <li className="flex items-start gap-3">
-    <Image
-      src={ICONS.blueStar}
-      alt="Blue Star Icon"
-      className="size-3.5 mt-2 shrink-0"
-    />
-    <span>
-      Solve the actual business problem — not just ship features
-    </span>
-  </li>
+            <br />
+            <br />
+            <span className="text-white font-medium">I design and ship production-ready web systems that:</span>
+            
+            <ul className="space-y-4 ml-3 mt-3">
+              <li className="flex items-start gap-3">
+                <Image
+                  src={ICONS.blueStar}
+                  alt="Blue Star Icon"
+                  className="size-3.5 mt-2 shrink-0"
+                />
+                <span>
+                  Solve the actual business problem — not just ship features
+                </span>
+              </li>
 
-  <li className="flex items-start gap-3">
-    <Image
-      src={ICONS.blueStar}
-      alt="Blue Star Icon"
-      className="size-3.5 mt-2 shrink-0"
-    />
-    <span>
-      Respect real constraints: budget, timeline, and team capacity
-    </span>
-  </li>
+              <li className="flex items-start gap-3">
+                <Image
+                  src={ICONS.blueStar}
+                  alt="Blue Star Icon"
+                  className="size-3.5 mt-2 shrink-0"
+                />
+                <span>
+                  Respect real constraints: budget, timeline, and team capacity
+                </span>
+              </li>
 
-  <li className="flex items-start gap-3">
-    <Image
-      src={ICONS.blueStar}
-      alt="Blue Star Icon"
-      className="size-3.5 mt-2 shrink-0"
-    />
-    <span>
-      Stay stable as requirements, users, and scale change
-    </span>
-  </li>
-</ul>
-
-            <motion.p
-              variants={itemVariants}
-              className="text-sm md:text-lg lg:text-sm xl:text-lg text-white font-Inter mt-3"
+              <li className="flex items-start gap-3">
+                <Image
+                  src={ICONS.blueStar}
+                  alt="Blue Star Icon"
+                  className="size-3.5 mt-2 shrink-0"
+                />
+                <span>
+                  Stay stable as requirements, users, and scale change
+                </span>
+              </li>
+            </ul>
+            <p
+              className="text-sm md:text-base text-white font-Inter mt-8"
             >
               The result is a system that teams can extend confidently — without
               expensive rewrites six months later.
-            </motion.p>
+            </p>
           </motion.p>
 
           {/* Button */}
