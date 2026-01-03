@@ -4,7 +4,13 @@ import Link from "next/link";
 import { socialMedia } from "@/data/footer.data";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { IMAGES } from "../../../../public/assets";
+import { ICONS, IMAGES } from "../../../../public/assets";
+import {
+  HiOutlineHome,
+  HiOutlineUser,
+  HiOutlineBriefcase,
+  HiOutlineEnvelope,
+} from "react-icons/hi2";
 
 interface MenuProps {
   closeMenu: () => void;
@@ -15,28 +21,30 @@ const Menu = ({ closeMenu }: MenuProps) => {
     {
       label: "Home",
       path: "/",
+      icon: HiOutlineHome,
     },
     {
       label: "About Me",
       path: "/about-me",
+      icon: HiOutlineUser,
     },
     // {
     //   label: "Portfolio",
-    //   path: "/portfolio",
+    //   path: "/about-me",
+    //   icon: HiOutlineUser,
     // },
     {
       label: "Services",
       path: "/services",
+      icon: HiOutlineBriefcase,
     },
-    // {
-    //   label: "Blog",
-    //   path: "/blog",
-    // },
     {
       label: "Contact",
       path: "/contact-me",
+      icon: HiOutlineEnvelope,
     },
   ];
+
   return (
     <div className="bg-neutral-55 rounded-xl p-7 w-[350px] md:w-[450px] relative font-Inter overflow-hidden">
       <Image
@@ -59,22 +67,27 @@ const Menu = ({ closeMenu }: MenuProps) => {
       </div>
 
       <div className="flex flex-col gap-2 mt-8 relative">
-        {navlinks?.map((item, index) => (
-          <motion.div
-            key={item?.label}
-            initial={{ opacity: 0, x: 20 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ delay: index * 0.05 }}
-          >
-            <Link
-              href={item?.path}
-              className="text-white hover:text-primary-25 text-lg font-medium transition-colors duration-300 block py-2"
-              onClick={closeMenu}
+        {navlinks?.map((item, index) => {
+          const Icon = item.icon;
+
+          return (
+            <motion.div
+              key={item.label}
+              initial={{ opacity: 0, x: 20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ delay: index * 0.05 }}
             >
-              {item?.label}
-            </Link>
-          </motion.div>
-        ))}
+              <Link
+                href={item.path}
+                onClick={closeMenu}
+                className="flex items-center gap-3 text-white hover:text-primary-25 text-lg font-medium transition-colors duration-300 py-2"
+              >
+                <Icon className="text-xl" />
+                <span>{item.label}</span>
+              </Link>
+            </motion.div>
+          );
+        })}
       </div>
 
       <div className="space-y-4 flex flex-col mt-14 relative">
@@ -83,8 +96,9 @@ const Menu = ({ closeMenu }: MenuProps) => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.4 }}
           href="mailto:hello@rahulsutradhar.com"
-          className="text-white hover:underline transition-colors duration-300"
+          className="text-white hover:underline transition-colors duration-300 flex items-center gap-2.5"
         >
+          <Image src={ICONS.email} alt={""} className="size-5" />
           hello@rahulsutradhar.com
         </motion.a>
         <motion.a
@@ -92,8 +106,9 @@ const Menu = ({ closeMenu }: MenuProps) => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.45 }}
           href="tel:+8801608249337"
-          className="text-white hover:underline transition-colors duration-300"
+          className="text-white hover:underline transition-colors duration-300 flex items-center gap-2.5"
         >
+          <Image src={ICONS.call} alt={""} className="size-5" />
           +880 1608249337
         </motion.a>
       </div>

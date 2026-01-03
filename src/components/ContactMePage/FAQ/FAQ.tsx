@@ -61,12 +61,13 @@ const FAQ = ({
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
-          className="bg-neutral-85 border border-neutral-35/20 p-5 md:p-8 lg:p-12 rounded-xl mt-13 lg:mt-[70px] relative overflow-hidden"
+          className="bg-neutral-85 border border-neutral-35/20 shadow-primary-10 p-5 md:p-8 lg:p-12 rounded-xl mt-13 lg:mt-[70px] relative overflow-hidden"
         >
+          <div className="size-[250px] bg-gradient-step-card opacity-30 rounded-full blur-[48px] absolute right-0 top-0"></div>
           <motion.div
             animate={{ scale: [1, 1.1, 1], opacity: [0.4, 0.6, 0.4] }}
             transition={{ duration: 10, repeat: Infinity }}
-            className="absolute inset-0 bg-primary-30/40 blur-[100px]"
+            className="absolute inset-0 bg-primary-30/40 blur-[300px]"
           />
 
           <div className="flex flex-col gap-5 relative z-10">
@@ -87,7 +88,7 @@ const FAQ = ({
                     onClick={() =>
                       setActiveIndex(isOpen ? null : index)
                     }
-                    className="flex w-full items-center justify-between py-2 text-left"
+                    className="flex w-full items-center justify-between py-2 text-left cursor-pointer"
                   >
                     <h2 className="font-semibold text-white text-sm md:text-base">
                       {item.title}
@@ -97,9 +98,7 @@ const FAQ = ({
                       transition={{ type: "spring", stiffness: 300 }}
                     >
                       <FaPlus
-                        className={`text-xl ${
-                          isOpen ? "text-primary-10" : "text-white"
-                        }`}
+                        className={`text-xl text-white`}
                       />
                     </motion.span>
                   </button>

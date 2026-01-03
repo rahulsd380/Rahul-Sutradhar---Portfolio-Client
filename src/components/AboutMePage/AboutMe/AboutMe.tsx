@@ -88,7 +88,7 @@ const AboutMe = () => {
               variants={textVariants}
               className="text-sm md:text-lg lg:text-sm xl:text-lg text-white font-Inter mt-8 leading-relaxed"
             >
-              I’m Rahul — a web developer and technical consultant who works with founders, startups, and growing businesses that need systems they can rely on long after launch.
+              I’m Rahul — a Web & App developer and technical consultant who works with founders, startups, and growing businesses that need systems they can rely on long after launch.
               <br />
               <br />
             </motion.p>

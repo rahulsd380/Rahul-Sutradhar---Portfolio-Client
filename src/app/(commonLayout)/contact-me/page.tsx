@@ -22,10 +22,7 @@ const ContactMePage = () => {
         heading="or need help?"
       />
       <ContactMe />
-     <FAQ
-  data={contactFaq}
-  heading="Before You Reach Out"
-/>
+      <FAQ data={contactFaq} heading="Before You Reach Out" />
       {/* <Testimonial /> */}
       <ProfileOverview />
     </div>

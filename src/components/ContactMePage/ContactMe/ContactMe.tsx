@@ -48,7 +48,7 @@ const ContactMe = () => {
     { value: "4.8", title: "Average Rating" },
   ];
 
-  const containerVariants:Variants = {
+  const containerVariants: Variants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
@@ -56,7 +56,7 @@ const ContactMe = () => {
     },
   };
 
-  const itemVariants:Variants = {
+  const itemVariants: Variants = {
     hidden: { opacity: 0, x: -30 },
     visible: {
       opacity: 1,
@@ -65,7 +65,7 @@ const ContactMe = () => {
     },
   };
 
-  const formVariants:Variants = {
+  const formVariants: Variants = {
     hidden: { opacity: 0, scale: 0.95, x: 30 },
     visible: {
       opacity: 1,
@@ -77,92 +77,96 @@ const ContactMe = () => {
 
   return (
     <Container>
-      <motion.div
-        variants={containerVariants}
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.2 }}
-        className="bg-primary-30 backdrop-blur-[300px] rounded-4xl p-4 lg:p-[50px] flex flex-col-reverse lg:flex-row items-center gap-10 mt-14 overflow-hidden"
-      >
-        <div className="w-full lg:w-1/2">
-          {/* Animated Heading */}
-          <motion.div variants={itemVariants}>
-            <Heading
-              subHeading="Let's Connect"
-              styledHeading="Start With a Clear Conversation"
-              heading=" — Not a Sales Pitch"
-              description="Tell me about your project. I’ll review it personally and let you know what’s feasible, what’s not, and what actually makes sense."
-              align="left"
-            />
-          </motion.div>
+      <div className="bg-primary-30 backdrop-blur-[300px] rounded-4xl p-4 lg:p-[50px] flex flex-col gap-10 mt-14 overflow-hidden">
+        <motion.div
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.2 }}
+          className="flex flex-col-reverse lg:flex-row items-center gap-10"
+        >
+          <div className="w-full lg:w-1/2">
+            {/* Animated Heading */}
+            <motion.div variants={itemVariants}>
+              <Heading
+                subHeading="Let's Connect"
+                styledHeading="Start With a"
+                heading="Clear Conversation"
+                description="Tell me about your project. I’ll review it personally and let you know what’s feasible, what’s not, and what actually makes sense."
+                align="left"
+              />
+            </motion.div>
 
-          <div className="mt-6 space-y-6">
-            {/* Stats Cards Section */}
-            <div className="flex gap-3 flex-wrap md:flex-nowrap">
-              {stats?.map((stat) => (
-                <motion.div
-                  key={stat?.title}
-                  variants={itemVariants}
-                  className="bg-neutral-80 hover:bg-primary-10 group h-fit flex-1 rounded-xl border border-neutral-35/30 p-4 font-Inter text-white flex flex-col items-center justify-center text-center transition-colors duration-300"
-                >
-                  <h2 className="text-2xl font-medium">
-                    <Counter value={stat.value} />
-                  </h2>
-                  <p className="text-sm opacity-70">{stat?.title}</p>
-                </motion.div>
-              ))}
-            </div>
-
-            {/* Bio Card */}
-            <motion.div
-              variants={itemVariants}
-              whileHover={{ x: 5 }}
-              className="bg-neutral-80 rounded-xl border border-neutral-35/30 p-4 font-Inter text-white flex flex-col justify-center"
-            >
-              <div className="flex gap-5">
-                <div className="relative size-[60px] rounded-full overflow-hidden border border-primary-15">
-                  <Image
-                    src={IMAGES.rahulSutradhar}
-                    alt="Rahul Sutradhar"
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-                <div>
-                  <h2 className="text-2xl font-medium">Rahul Sutradhar</h2>
-                  <p className="text-sm text-primary-40">Developer</p>
-                </div>
+            <div className="mt-6 space-y-6">
+              {/* Stats Cards Section */}
+              <div className="flex gap-3 flex-wrap md:flex-nowrap">
+                {stats?.map((stat) => (
+                  <motion.div
+                    key={stat?.title}
+                    variants={itemVariants}
+                    className="bg-neutral-80 hover:bg-primary-10 group h-fit flex-1 rounded-xl border border-neutral-35/30 p-4 font-Inter text-white flex flex-col items-center justify-center text-center transition-colors duration-300"
+                  >
+                    <h2 className="text-2xl font-medium">
+                      <Counter value={stat.value} />
+                    </h2>
+                    <p className="text-sm opacity-70">{stat?.title}</p>
+                  </motion.div>
+                ))}
               </div>
 
-              <p className="text-sm text-neutral-35 font-Inter mt-6 leading-relaxed">
-               I’m Rahul — founder-led developer. I work directly with business owners to design and build systems that are fast, scalable, and maintainable long-term. No middlemen. No overengineering.
-              </p>
-            </motion.div>
+              {/* Bio Card */}
+              <motion.div
+                variants={itemVariants}
+                whileHover={{ x: 5 }}
+                className="bg-neutral-80 rounded-xl border border-neutral-35/30 p-4 font-Inter text-white flex flex-col justify-center"
+              >
+                <div className="flex gap-5">
+                  <div className="relative size-[60px] rounded-full overflow-hidden border border-primary-15">
+                    <Image
+                      src={IMAGES.rahulSutradhar}
+                      alt="Rahul Sutradhar"
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
+                  <div>
+                    <h2 className="text-2xl font-medium">Rahul Sutradhar</h2>
+                    <p className="text-sm text-primary-40">Developer</p>
+                  </div>
+                </div>
 
-            {/* CTA Box */}
-            <motion.div 
-              variants={itemVariants}
-              className="p-6 bg-primary-35 rounded-2xl flex flex-col md:flex-row gap-4 items-center justify-between border border-white/5"
-            >
-              <h2 className="font-Uncut-Sans text-xl md:text-2xl font-semibold text-white">
-                Want faster clarity? Book a 30-minute feasibility call.
-              </h2>
-              <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-                <Button
-                  variant="secondary"
-                  label="Book A Call"
-                  className="w-full md:w-fit px-8"
-                />
+                <p className="text-sm text-neutral-35 font-Inter mt-6 leading-relaxed">
+                  I’m Rahul — founder-led developer. I work directly with
+                  business owners to design and build systems that are fast,
+                  scalable, and maintainable long-term. No middlemen. No
+                  overengineering.
+                </p>
               </motion.div>
-            </motion.div>
+            </div>
           </div>
-        </div>
 
-        {/* Right Side: Form Reveal */}
-        <motion.div variants={formVariants} className="w-full lg:w-1/2">
-          <ContactUsForm />
+          {/* Right Side: Form Reveal */}
+          <motion.div variants={formVariants} className="w-full lg:w-1/2">
+            <ContactUsForm />
+          </motion.div>
         </motion.div>
-      </motion.div>
+        {/* CTA Box */}
+        <motion.div
+          variants={itemVariants}
+          className="p-6 bg-primary-35 rounded-2xl flex flex-col md:flex-row gap-4 items-center justify-between border border-white/5"
+        >
+          <h2 className="font-Uncut-Sans text-xl md:text-2xl font-semibold text-white">
+            Want faster clarity? Book a 30-minute feasibility call.
+          </h2>
+          <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+            <Button
+              variant="secondary"
+              label="Book A Call"
+              className="w-full md:w-fit px-8"
+            />
+          </motion.div>
+        </motion.div>
+      </div>
     </Container>
   );
 };

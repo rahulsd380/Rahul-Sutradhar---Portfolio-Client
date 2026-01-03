@@ -3,7 +3,7 @@ import Container from "@/components/Reusable/Container/Container";
 import Heading from "@/components/Reusable/Heading/Heading";
 import ExperienceCard from "./ExperienceCard";
 import { ReactNode } from "react";
-import { motion } from 'framer-motion';
+import { motion } from "framer-motion";
 
 export type TJobDetail = {
   label: string;
@@ -23,17 +23,17 @@ const WorkExperience = () => {
   const experiences = [
     {
       id: 1,
-      companyName: "NeonShark",
-      companyOverview: "Award-winning client projects and scalable systems.",
-      employmentPeriod: "Jan 2025 — Present",
+      companyName: "MITRA Consultancy",
+      companyOverview: "From Code to Compliance & Training Solutions",
+      employmentPeriod: "February 2025 — Present",
       jobDetails: [
         { label: "Position", value: "Full Stack Developer" },
         { label: "Location", value: "India (Remote)" },
         { label: "Industry", value: "Consulting · Software" },
         {
           label: "Website",
-          value: "www.mitrconsultancy.com",
-          href: "https://www.mitrconsultancy.com",
+          value: "www.mitraconsultancy.co.in",
+          href: "https://www.mitraconsultancy.co.in",
         },
       ],
       description: (
@@ -46,14 +46,71 @@ const WorkExperience = () => {
         </span>
       ),
     },
+    {
+      id: 2,
+      companyName: "NeonShark",
+      companyOverview: "Software & Marketing Solutions Company",
+      employmentPeriod: "May 2024 — January 2025",
+      jobDetails: [
+        { label: "Position", value: "Frontend Developer" },
+        { label: "Location", value: "Remote" },
+        { label: "Industry", value: "Software · Marketing" },
+        {
+          label: "Website",
+          value: "www.neonshark.co.in",
+          href: "https://neonshark.co.in",
+        },
+      ],
+      description: (
+        <span>
+          Built and maintained responsive, high-performance web interfaces for
+          client applications. Focused on clean UI architecture, reusable
+          components, and smooth user experiences.
+          <br />
+          <br />
+          Worked primarily with React, Next.js, Tailwind CSS, and Redux, while
+          also contributing to backend API integration using Express.js to
+          support full-stack functionality.
+        </span>
+      ),
+    },
+
+    {
+      id: 3,
+      companyName: "NeonShark",
+      companyOverview: "Software & Marketing Solutions Company",
+      employmentPeriod: "February 2024 — May 2024",
+      jobDetails: [
+        { label: "Position", value: "Frontend Developer Intern" },
+        { label: "Location", value: "Remote" },
+        { label: "Industry", value: "Software · Marketing" },
+        {
+          label: "Website",
+          value: "www.neonshark.co.in",
+          href: "https://neonshark.co.in",
+        },
+      ],
+      description: (
+        <span>
+          During my internship, I assisted in developing responsive front-end
+          components and features for web applications. I focused on building
+          reusable React components, styling with Tailwind CSS, and integrating
+          with existing Next.js projects.
+          <br />
+          <br />
+          This role gave me hands-on experience with Redux state management and
+          working in a remote, collaborative environment.
+        </span>
+      ),
+    },
   ];
   return (
     <div className="py-[100px] relative overflow-hidden">
       {/* Pulsing Background Glow */}
-      <motion.div 
-        animate={{ 
+      <motion.div
+        animate={{
           scale: [1, 1.2, 1],
-          opacity: [0.3, 0.6, 0.3]
+          opacity: [0.3, 0.6, 0.3],
         }}
         transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
         className="size-[250px] md:size-[344px] rounded-full bg-primary-10 left-0 top-20 absolute blur-[100px] -z-10"

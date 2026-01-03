@@ -24,9 +24,9 @@ const AboutMePage = () => {
     <div>
       <HeroSection
         subHeading="About Me"
-        styledHeading="Building Scalable Web Systems"
-        heading="for Businesses That Want to Grow"
-        description="I’m a web development consultant helping startups, agencies, and growing businesses design and build reliable web systems that stay fast, stable, and easy to extend after launch."
+        styledHeading="Scalable Software Solutions-"
+        heading="Built for Growing Businesses"
+        description="I’m a Web & App development consultant helping startups, agencies, and growing businesses design and build reliable web systems that stay fast, stable, and easy to extend after launch."
       />
       <AboutMe />
       <MissionAndVision />
