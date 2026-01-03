@@ -5,6 +5,10 @@ import { IMAGES } from "../../../../public/assets";
 import { GoStarFill } from "react-icons/go";
 
 const WhoIHelp = () => {
+  const headingCommonClassName =
+    "font-Uncut-Sans text-2xl md:text-[32px] font-semibold text-white leading-9";
+  const descriptionCommonClassName =
+    "font-Inter text-sm md:text-base text-neutral-35 leading-6 mt-2";
   return (
     <Container>
       <div className="py-7 lg:py-[100px]">
@@ -19,7 +23,7 @@ const WhoIHelp = () => {
           {/* Left side */}
           <div className="w-full md:w-[60%] lg:w-[70%] space-y-3">
             {/* Left-Card-1 */}
-            <div className="bg-neutral-55 rounded-[20px] p-6 relative overflow-hidden max-h-[330px]">
+            <div className="bg-neutral-55 rounded-[20px] p-6 relative overflow-hidden max-h-[350px]">
               <div className="w-[181px] h-[345px] rotate-135 bg-gradient-step-card rounded-[345px] blur-[48px] absolute bottom-[-110px] left-[-130px]"></div>
               <div className="w-[181px] h-[345px] rotate-90 bg-gradient-step-card rounded-[345px] blur-[48px] absolute -top-56 -right-10"></div>
               <Image
@@ -28,14 +32,16 @@ const WhoIHelp = () => {
                 className="absolute top-0 bottom-0 right-0 left-0 w-full"
               />
               <div className="relative flex flex-col h-full">
-                <h3 className="font-Uncut-Sans text-2xl md:text-[32px] font-semibold text-white leading-9">
-                  Local Businesses
-                </h3>
-                <p className="font-Inter text-sm md:text-lg text-neutral-35 leading-6 mt-2">
-                If your website exists but doesn’t consistently bring inquiries, conversions, or clarity — the problem isn’t design.
-It’s structure, messaging, and performance.
+                <h3 className={headingCommonClassName}>Local Businesses</h3>
+                <p className={descriptionCommonClassName}>
+                  If your website exists but doesn’t consistently bring
+                  inquiries, conversions, or clarity — the problem isn’t design.
+                  It’s structure, messaging, and performance.
                 </p>
-                <div className="font-Inter text-sm md:text-lg text-neutral-35 leading-6 mt-2">Best for service-based local businesses ready to invest in long-term results.</div>
+                <div className={descriptionCommonClassName}>
+                  Best for service-based local businesses ready to invest in
+                  long-term results.
+                </div>
               </div>
               <Image src={IMAGES.linnerVector} alt="" className="" />
             </div>
@@ -45,9 +51,9 @@ It’s structure, messaging, and performance.
               <div className="size-[322px] bg-gradient-step-card rounded-[322px] blur-[48px] absolute -bottom-60 left-[168px]"></div>
               <div className="flex flex-col items-center justify-center text-center h-full">
                 <h3 className="font-Uncut-Sans text-[32px] md:text-[48px] font-semibold text-white leading-9">
-                 3+ 
+                  3+
                 </h3>
-                <p className="font-Inter text-sm md:text-lgtext-lg text-neutral-35 leading-6 mt-4">
+                <p className="font-Inter text-sm md:text-base text-white leading-6 mt-4 z-10">
                   Years Shipping Production Software
                 </p>
               </div>
@@ -88,7 +94,7 @@ It’s structure, messaging, and performance.
                     <h3 className="font-Uncut-Sans text-[32px] md:text-[58px] font-semibold text-white">
                       38+
                     </h3>
-                    <h3 className="font-Uncut-Sans text-lg md:text-[32px] text-white leading-5 md:leading-0">
+                    <h3 className="font-Uncut-Sans text-lg md:text-[28px] text-white leading-5 md:leading-0 mt-3">
                       Clients Served
                     </h3>
                   </div>
@@ -109,11 +115,10 @@ It’s structure, messaging, and performance.
                 className="absolute top-0 bottom-0 right-0 left-0 w-full h-full"
               />
               <div className="relative p-6">
-                <h3 className="font-Uncut-Sans text-2xl md:text-[32px] font-semibold text-white leading-9">
-                  Startups
-                </h3>
-                <p className="font-Inter text-sm md:text-lg text-neutral-35 leading-6 mt-2">
-                 Launch your first product with a system designed to scale — without rebuilding everything after your first traction spike.
+                <h3 className={headingCommonClassName}>Startups</h3>
+                <p className={descriptionCommonClassName}>
+                  Launch your first product with a system designed to scale —
+                  without rebuilding everything after your first traction spike.
                 </p>
               </div>
               <Image src={IMAGES.startup} alt="" className="relative" />
@@ -128,11 +133,10 @@ It’s structure, messaging, and performance.
                 className="absolute top-0 bottom-0 right-0 left-0 w-full h-full"
               />
               <div className="relative p-6">
-                <h3 className="font-Uncut-Sans text-2xl md:text-[32px] font-semibold text-white leading-9">
-                  Agencies
-                </h3>
-                <p className="font-Inter text-sm md:text-lg text-neutral-35 leading-6 mt-2">
-                 Partner with a technical team that helps you deliver stable systems while you focus on growth and clients.
+                <h3 className={headingCommonClassName}>Agencies</h3>
+                <p className={descriptionCommonClassName}>
+                  Partner with a technical team that helps you deliver stable
+                  systems while you focus on growth and clients.
                 </p>
               </div>
               <Image src={IMAGES.agency} alt="" className="relative" />

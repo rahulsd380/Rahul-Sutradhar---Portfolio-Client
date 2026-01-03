@@ -4,6 +4,8 @@ import Container from "@/components/Reusable/Container/Container";
 import Image from "next/image";
 import { GRADIENTS, IMAGES } from "../../../../public/assets";
 import Heading from "@/components/Reusable/Heading/Heading";
+import Link from "next/link";
+import Button from "@/components/Reusable/Button/Button";
 
 const HowItWorks = () => {
   const processSteps = [
@@ -102,7 +104,7 @@ const HowItWorks = () => {
             <Heading
               subHeading="How It Work"
               styledHeading="Build Systems "
-              heading="That Stay Fast, Stable, and Scalable After Launch"
+              heading="That Stay Fast and Scalable"
               align="left"
               description="A clear, proven development process designed to prevent rewrites, performance issues, and costly surprises as your product grows."
             />
@@ -128,7 +130,7 @@ const HowItWorks = () => {
                   <motion.div
                     variants={lineVariants}
                     style={{ originY: 0 }}
-                    className="border border-dashed border-primary-15 w-0.5 h-24 absolute left-5 top-12 -z-10"
+                    className="border border-dashed border-primary-15 w-0.5 h-full absolute left-5 top-12 -z-10"
                   />
                 )}
 
@@ -151,6 +153,9 @@ const HowItWorks = () => {
                 </div>
               </motion.div>
             ))}
+              <Link href={"/book-call"}>
+                <Button variant="secondary" label="Book A Discovery Call" />
+              </Link>
           </div>
         </motion.div>
       </Container>
